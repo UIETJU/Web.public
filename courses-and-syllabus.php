@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJ2HYZPRCX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VJ2HYZPRCX');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content=" The University Institute of Engineering & Technology (UIET) was established by the University of Jammu in 2017 as a ‘Centre of Excellence to provide quality education in Engineering & Technology." />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Courses and Syllabus - University Institute of Engineering and Technology,
+    Kathua
+  </title>
+  <link rel="icon" href="./assets/png/uiet_header.png" />
+  <link rel="stylesheet" href="css/style.css<?php echo "?t=" . time(); ?>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <?php require_once "components/navbar.php" ?>
+  <section class="projects sec-pad uiet--animated-grid" style="background-color: #fff">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Courses and Syllabus</span>
+        <span class="heading-sec__sub center-text">
+          Courses offered at University Institute of Engineering and
+          Technology, Kathua
+        </span>
+      </h2>
+
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/jpeg/cse.jpg" alt="Computer Science and Engineering" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">
+              Computer Science and Engineering
+            </h3>
+            <p class="projects__row-content-desc left-text">
+              UIET, Kathua is a constituent institution of the University of
+              Jammu. It is the only Engineerning college under the University
+              offering Bachelor of Technology course in Computer Science and
+              Engineering (CSE) with intake of 60 seats.
+            </p>
+            <a href="./documents/CSE_syllabus_2018.pdf" class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank">Download Syllabus</a>
+          </div>
+        </div>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/jpeg/civil.jpg" alt="Civil Engineering" class="projects__row-img" loading="lazy" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Civil Engineering</h3>
+              <p class="projects__row-content-desc left-text">
+                UIET, Kathua is a constituent institution of the University of
+                Jammu. It is the only Engineerning college under the
+                University offering Bachelor of Technology course in Civil
+                Engineering (CE) with an intake of 60 seats.
+              </p>
+              <a href="./documents/CIVIL_syllabus.pdf" class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank">Download Syllabus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <?php require_once "components/footer.php" ?>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
