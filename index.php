@@ -212,19 +212,15 @@
             </picture>
           </div>
           <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Admissions Closed!</h3>
-            <p class="projects__row-content-desc">
+            <h3 class="projects__row-content-title">Admissions for session 2024-25 are Open!</h3>
+            <!-- <p class="projects__row-content-desc">
               Please check back around June/July for admissions to our B.Tech courses in Civil and Computer
-              Science Engineering!</p>
+              Science Engineering!</p> -->
             <q class="projects__row-content-desc"> We require <a class="exams" href="https://cuetug.ntaonline.in/universities/eligibility/Nzk=">CUET-UG 📃</a> and <a class="exams" href="https://www.cbse.gov.in/cbsenew/cbse.html">Higher Secondary</a> scores for <a class="exams" href="documents/Notifications/Admission/2023/Brochure2023.pdf">Regular</a>
               Entry and B.SC/Diploma scores for <a class="exams" href="assets/jpeg/LENotice.jpg">Lateral</a> Entry.</q>
 
             <div class="side-img-link-container">
-              <!--a
-                  href="documents/Notifications/Admission/2023/LEBrouchure.pdf"
-                  class="btn btn--theme dynamicBgClr"
-                  target="_blank"
-                  >Lateral Entry Brochure</a-->
+              <a href="https://drive.google.com/file/d/1ikDsfxCggasVyDdQD0wsOaBazohtwx9Z/view?usp=sharing" class="btn btn--theme dynamicBgClr" target="_blank">Admission Notice 2024</a>
 
               <!--a href="documents/SelectionLists/2023/LE2.pdf" class="btn btn--theme dynamicBgClr" target="_blank">LE
                 Selection List 2</a>
