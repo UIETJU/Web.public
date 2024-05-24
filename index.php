@@ -1,3 +1,30 @@
+<?php
+// for main site production
+require './../DB/db-connect.php';
+
+if (!$conn) {
+  die("Connection Failed! " . mysqli_connect_error());
+}
+
+$sql = "SELECT image FROM Gallery ";
+$result = $conn->query($sql);
+
+$flyers = array();
+if ($result->num_rows > 0) {
+  while ($row = $result->fetch_assoc()) {
+    $url = $row['image'];
+    // Check if the URL is a Google Drive shareable link
+    if (strpos($url, 'drive.google.com') !== false) {
+      // Convert Google Drive link to direct link
+      if (preg_match('/file\/d\/(.*?)\/view/', $url, $matches)) {
+        $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
+      }
+    }
+    $flyers[] = $url;
+  }
+}
+$conn->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,10 +102,28 @@
   <!-- CHATBOT -->
 
   <!-- MODAL -->
-  <!--<div class="modal hidden">
-      <span class="btn-cross">&Cross;</span>
-      <img src="./assets/jpeg/LENotice.jpg" alt="LE 2023" />
-    </div>-->
+  <!--This MODAL notifcation system is linked to the mentioned databse which in turn is manipulated using the google forms based CMS, to update the modal kindly use the google forms/sheets.-->
+  <!--Modal will only display when there is content in the databse otherwise it will remain hidden/unoperative.-->
+  <!--This is part of the google forms based novel CMS for easy web application updation/maintenance-->
+  <?php if (count($flyers) > 0): ?>
+            <!-- Modal Structure -->
+              <div id="flyerModal" class="modal">
+                  <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <div class="carousel">
+                          <span class="prev">&#10094;</span>
+                          <span class="next">&#10095;</span>
+                          <div class="carousel-inner" id="carousel-inner">
+                    
+                              <?php foreach ($flyers as $index => $url): ?>
+                                        <img src="<?php echo htmlspecialchars($url); ?>" alt="Flyer <?php echo $index + 1; ?>" class="flyer-image <?php echo $index === 0 ? 'active' : ''; ?>">
+                              <?php endforeach; ?>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+    <?php endif; ?>
+
 
   <section id="about" class="about sec-pad">
     <div class="main-container">
@@ -201,7 +246,6 @@
           Welcome future UIETian!
         </span>
       </h2>
-
       <div class="projects__content">
         <div class="projects__row">
           <div class="projects__row-img-cont">
@@ -255,6 +299,7 @@
       </div>
   </section>
   <?php require_once "components/footer.php" ?>
+  <script src="./js/script.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/preload.js"></script>
   <script src="./js/gallery.js"></script>

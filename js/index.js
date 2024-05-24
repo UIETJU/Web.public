@@ -65,39 +65,75 @@ if (
   }, 800);
 }
 
-// dark theme test
+//Dynamic MODAL Notifcations using Google Forms/AppScript
+//This file contains the script for new modal notification system. The system is designed to display multiple modals as available in the database.
+//The script ensures that modal is not displayed if the database is empty
+//The modal is displayed as a carousel for multiple notifications.
+//This is part of the google forms based novel CMS for easy web application updation/maintenance
+document.addEventListener('DOMContentLoaded', function() {
+  var modal = document.getElementById("flyerModal");
+  if (modal) {
+      // Function to show the current image
+      function showImage(index) {
+          var carouselImages = document.getElementsByClassName("flyer-image");
+          for (var i = 0; i < carouselImages.length; i++) {
+              carouselImages[i].classList.remove("active");
+          }
+          carouselImages[index].classList.add("active");
+      }
 
-// try {
-//   document.querySelectorAll("section").forEach((section) => {
-//     section.style.backgroundColor = "#000";
-//     document.body.style.backgroundColor = "#000";
-//   });
+      // Initialize the current index
+      var currentIndex = 0;
 
-//   document.querySelectorAll("section .heading-sec__main").forEach((heading) => {
-//     heading.style.color = "#fff";
-//   });
+      // Function to display the modal after a delay
+      function displayModal() {
+          setTimeout(function() {
+              modal.style.display = "block";
+          }, 1000); // Display modal after 1 second (1000 milliseconds)
+      }
 
-//   document.querySelectorAll("section .heading-sec__sub").forEach((heading) => {
-//     heading.style.color = "#fff";
-//   });
+      // Call displayModal once to show the modal after the delay
+      displayModal();
 
-//   document.querySelectorAll("section h3, section p").forEach((text) => {
-//     text.style.color = "#fff";
-//   });
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
 
-//   if (
-//     window.location.href.includes("results") ||
-//     window.location.href.includes("contact")
-//   ) {
-//     document.querySelectorAll("section h2, section a").forEach((text) => {
-//       text.style.color = "#fff";
-//     });
-//   }
-//   if (window.location.href.includes("placements")) {
-//     document.querySelectorAll("table th, td, tr").forEach((text) => {
-//       text.style.color = "#fff";
-//     });
-//   }
-// } catch (error) {
-//   console.log("Something wrong happened!");
-// }
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      };
+
+      // Optionally, add a function to close the modal with the escape key
+      document.addEventListener('keydown', function(event) {
+          if (event.key === "Escape") {
+              modal.style.display = "none";
+          }
+      });
+
+      // Get the next and previous buttons
+      var next = document.getElementsByClassName("next")[0];
+      var prev = document.getElementsByClassName("prev")[0];
+
+      // When the user clicks on next button
+      next.onclick = function() {
+          var carouselImages = document.getElementsByClassName("flyer-image");
+          currentIndex = (currentIndex + 1) % carouselImages.length;
+          showImage(currentIndex);
+      };
+
+      // When the user clicks on previous button
+      prev.onclick = function() {
+          var carouselImages = document.getElementsByClassName("flyer-image");
+          currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
+          showImage(currentIndex);
+      };
+  }
+});
+
