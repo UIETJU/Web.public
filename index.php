@@ -260,8 +260,8 @@ $conn->close();
             <!-- <p class="projects__row-content-desc">
               Please check back around June/July for admissions to our B.Tech courses in Civil and Computer
               Science Engineering!</p> -->
-            <q class="projects__row-content-desc"> We require <a class="exams" href="https://cuetug.ntaonline.in/universities/eligibility/Nzk=">CUET-UG 📃</a> and <a class="exams" href="https://www.cbse.gov.in/cbsenew/cbse.html">Higher Secondary</a> scores for <a class="exams" href="documents/Notifications/Admission/2023/Brochure2023.pdf">Regular</a>
-              Entry and B.SC/Diploma scores for <a class="exams" href="assets/jpeg/LENotice.jpg">Lateral</a> Entry.</q>
+            <q class="projects__row-content-desc"> We accept <a class="exams" href="https://jeemain.nta.ac.in">JEE Mains 📃</a>,  <a class="exams" href="https://cuetug.ntaonline.in/universities/eligibility/Nzk=">CUET-UG 📃</a> and <a class="exams" href="https://www.cbse.gov.in/cbsenew/cbse.html">Higher Secondary</a> scores for <a class="exams" href="https://lh3.googleusercontent.com/d/1ikDsfxCggasVyDdQD0wsOaBazohtwx9Z">Regular</a>
+               in the same precedence.<br> B.SC/Diploma scores accepted for <a class="exams" href="assets/jpeg/LENotice.jpg">Lateral</a> Entry.</q>
 
             <div class="side-img-link-container">
               <a href="https://drive.google.com/file/d/1ikDsfxCggasVyDdQD0wsOaBazohtwx9Z/view?usp=sharing" class="btn btn--theme dynamicBgClr" target="_blank">Admission Notice 2024</a>
