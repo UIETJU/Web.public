@@ -2422,9 +2422,9 @@ iframe {
   margin: 10% auto;
   /* 5% from the top and centered */
   padding: 20px;
-  width: 90%;
+  width: 100%;
   /* Could be more or less, depending on screen size */
-  max-width: 90vh;
+  max-width: 100vh;
   /* Maximum width */
   text-align: center;
   position: relative;
