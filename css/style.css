@@ -2396,7 +2396,7 @@ iframe {
 
 /* The Modal (background) */
 .modal {
-  display: block;
+  display: hidden;
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
@@ -2517,6 +2517,20 @@ iframe {
   right: -50px;
   /* Move right button outside the image */
   border-radius: 3px 0 0 3px;
+}
+
+@media (max-width: 640px) {
+  .prev {
+    left: -30px;
+    /* Move left button outside the image */
+    border-radius: 0 3px 3px 0;
+  }
+
+  .next {
+    right: -30px;
+    /* Move right button outside the image */
+    border-radius: 3px 0 0 3px;
+  }
 }
 
 .prev:hover,
