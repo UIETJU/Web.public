@@ -2424,7 +2424,7 @@ iframe {
   padding: 20px;
   width: 60vh;
   /* Could be more or less, depending on screen size */
-  max-width: 70vh;
+  max-width: 80vh;
   /* Maximum width */
   text-align: center;
   position: relative;
