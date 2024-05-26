@@ -509,7 +509,6 @@ table a:hover {
 }
 
 @media only screen and (max-width: 37.5em) {
-
   table th,
   td,
   tr {
@@ -770,7 +769,7 @@ table a:hover {
   font-weight: 700;
   border-radius: 80px;
   background-color: #1879cd;
-  box-shadow: 0px 5px 0 rgb(0, 47, 88);;
+  box-shadow: 0px 5px 0 rgb(0, 47, 88);
   transition: transform 0.3s;
 }
 
@@ -847,7 +846,7 @@ table a:hover {
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(https://lh3.googleusercontent.com/d/1J2_d3DFUHvmEOU-emA8-CKSYHwAgeKBD);
-  background-attachment:fixed;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1212,9 +1211,11 @@ table a:hover {
 /* Facilities */
 
 .contact {
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)),
+      rgba(0, 98, 185, 0.8)
+    ),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
@@ -1322,9 +1323,11 @@ table a:hover {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)),
+      rgba(0, 98, 185, 0.8)
+    ),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
@@ -2393,7 +2396,7 @@ iframe {
 
 /* The Modal (background) */
 .modal {
-  display: none;
+  display: block;
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
@@ -2403,7 +2406,7 @@ iframe {
   top: 0;
   width: 100%;
   /* Full width */
-  height: 100%;
+  height: 100vh;
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
@@ -2415,7 +2418,6 @@ iframe {
 
 /* Modal Content */
 .modal-content {
-
   margin: 10% auto;
   /* 5% from the top and centered */
   padding: 20px;
@@ -2437,28 +2439,36 @@ iframe {
 
 /* Close Button */
 .close {
-  color: #f9f9f9;
+  color: #f1f1f1;
+  background-color: red;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   float: right;
   font-size: 30px;
   font-weight: bold;
   position: absolute;
-  top: 8px;
-  right: 5px;
+  top: 9px;
+  right: 7px;
   cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #fff;
   text-decoration: none;
 }
 
 /* Carousel styling */
 .carousel {
   position: relative;
-  margin-top: 3px;
+  margin-top: 5px;
   width: 100%;
-  max-height: auto;
+  height: 100%;
 }
 
 .carousel-inner {
@@ -2468,7 +2478,7 @@ iframe {
 
 .flyer-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: none;
   /* Hide all images initially */
 }
@@ -2488,6 +2498,7 @@ iframe {
   margin-top: -22px;
   padding: 16px;
   color: white;
+  background-color: rgba(0, 0, 0, 0.4);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -2497,13 +2508,13 @@ iframe {
 }
 
 .prev {
-  left: -30px;
+  left: -50px;
   /* Move left button outside the image */
   border-radius: 0 3px 3px 0;
 }
 
 .next {
-  right: -30px;
+  right: -50px;
   /* Move right button outside the image */
   border-radius: 3px 0 0 3px;
 }
