@@ -2422,12 +2422,20 @@ iframe {
   margin: 10% auto;
   /* 5% from the top and centered */
   padding: 20px;
-  width: 80%;
+  width: 90%;
   /* Could be more or less, depending on screen size */
-  max-width: 65vh;
+  max-width: 80vh;
   /* Maximum width */
   text-align: center;
   position: relative;
+}
+
+@media (min-width: 1024px) {
+  .modal-content {
+    margin: 5% auto;
+    width: 80%;
+    max-width: 60vh;
+  }
 }
 
 /* Close Button */
@@ -2437,8 +2445,8 @@ iframe {
   font-size: 30px;
   font-weight: bold;
   position: absolute;
-  top: 5px;
-  right: 2px;
+  top: 8px;
+  right: 5px;
   cursor: pointer;
 }
 
@@ -2480,7 +2488,7 @@ iframe {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -50px;
+  margin-top: -22px;
   padding: 16px;
   color: white;
   font-weight: bold;
