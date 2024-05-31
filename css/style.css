@@ -766,7 +766,7 @@ table a:hover {
   border-radius: 80px;
   background-color: #1879cd;
   box-shadow: 0px 5px 0 rgb(0, 47, 88);
-  transition: transform 0.3s;
+
 }
 
 .btn:active {
@@ -790,10 +790,11 @@ table a:hover {
 }
 
 .btn--theme-inv {
+  width: fit-content;
   color: #0062b9;
   background: #fff;
   border: 2px solid #0062b9;
-  box-shadow: none;
+  text-transform: none;
   padding: calc(1.5rem - 2px) calc(5rem - 2px);
 }
 
@@ -2288,7 +2289,8 @@ iframe {
 }
 
 .document-row:nth-child(odd) {
-  background-color: #d1deed;
+  background-color: hwb(28 87% 3%);
+  ;
 }
 
 .document-row .description {
@@ -2302,15 +2304,6 @@ iframe {
   object-fit: contain;
 }
 
-.document-row .button {
-  display: inline-block;
-  background-color: #1b65b5;
-  color: #fff;
-  padding: 15px 20px;
-  border-radius: 5px;
-  cursor: pointer !important;
-}
-
 @media (max-width: 620px) {
   .document-row {
     flex-direction: column;
@@ -2321,10 +2314,6 @@ iframe {
     max-width: 250px;
     text-align: center;
     font-size: 1.2rem;
-  }
-
-  .document-row .button {
-    padding: 5px 10px;
   }
 
   .document-row .image {
@@ -2347,13 +2336,23 @@ iframe {
 .committee-card {
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.125);
+  background-color: rgb(247, 245, 243);
+  box-shadow: 10px 10px 20px rgba(244, 198, 158, 0.125), -10px -10px 20px rgba(244, 198, 158, 0.125);
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding: 3rem;
+  border-radius: 50px;
   justify-content: space-between;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
+
+.committee-card:hover,
+.committee-card:active {
+  transform: translateY(-10px);
+  box-shadow: 20px 20px 30px rgba(244, 198, 158, 0.2), -20px -20px 30px rgba(244, 198, 158, 0.2);
+}
+
 
 .committee-title {
   font-size: 2.8rem;
@@ -2365,14 +2364,7 @@ iframe {
   color: #777;
 }
 
-.committee-card a {
-  display: inline-block;
-  width: max-content;
-  background-color: #0062b9;
-  color: white;
-  padding: 1.2rem;
-  border-radius: 0.5rem;
-}
+
 
 @media (max-width: 640px) {
   .committees {
@@ -2531,6 +2523,97 @@ iframe {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+/*NotificationsSystem*/
+.notification-wrapper body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.notifications-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.notifications-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.notification-column {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 70vh;
+}
+
+.notification-column h2 {
+  margin: 0 0 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+.notifications {
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.notifications p {
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notifications p:last-child {
+  border-bottom: none;
+}
+
+.notification-date {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.archive-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.archive-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .notifications-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .notification-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 
 /*Misc Styling*/
 .exams {

@@ -68,12 +68,12 @@ $committees = [
 
 
         <div class="committees">
-            <?php foreach ($committees as $currentCommittee) : ?>
-                <div class="committee-card">
-                    <h1 class="committee-title"><?= htmlspecialchars($currentCommittee->name); ?></h1>
-                    <p class="committee-description"><?= htmlspecialchars($currentCommittee->description); ?></p>
-                    <a target="_blank" href="<?= htmlspecialchars($currentCommittee->link); ?>">Learn More</a>
-                </div>
+            <?php foreach ($committees as $currentCommittee): ?>
+                        <div class="committee-card">
+                            <h1 class="committee-title"><?= htmlspecialchars($currentCommittee->name); ?></h1>
+                            <p class="committee-description"><?= htmlspecialchars($currentCommittee->description); ?></p>
+                            <a class="btn btn--theme-inv" target="_blank" href="<?= htmlspecialchars($currentCommittee->link); ?>">Members</a>
+                        </div>
             <?php endforeach; ?>
 
         </div>

@@ -47,7 +47,7 @@
             <h3>University Notifications</h3>
             <p>Access University Council, Syndicate, Academic Council resolutions related to UIET here!</p>
         </div>
-        <a class="button" target="_blank" href="https://drive.google.com/drive/folders/16kuN5ov-tGWuIai9hLKsyQdeBK1f8518">Docs here!</a>
+        <a class="btn btn--theme-inv" target="_blank" href="https://drive.google.com/drive/folders/16kuN5ov-tGWuIai9hLKsyQdeBK1f8518">Docs here!</a>
     </div>
     <div class="document-row" id="right">
         <img src="assets/png/AICTE.png" alt="Image 2" class="image">
@@ -55,7 +55,7 @@
             <h3>AICTE Disclosures</h3>
             <p>Access AICTE LoA, Mandatory Disclosures, Approval notices etc. here!</p>
         </div>
-        <a class="button" target="_blank" href="https://drive.google.com/drive/folders/1IbUHrvfBp--NfS0LjVu0HiGJtc1h1kgu">Docs here!</a>
+        <a class="btn btn--theme-inv" target="_blank" href="https://drive.google.com/drive/folders/1IbUHrvfBp--NfS0LjVu0HiGJtc1h1kgu">Docs here!</a>
 
     </div>
     <div class="document-row" id="left">
@@ -64,7 +64,7 @@
             <h3>Government Orders</h3>
             <p>Access Government orders and notifications related to UIET here!</p>
         </div>
-        <a class="button" target="_blank" href="https://drive.google.com/drive/folders/1pU2q0ltm3i0rTyMueOvbaE_t0_FRJb0Q">Docs here!</a>
+        <a class="btn btn--theme-inv" target="_blank" href="https://drive.google.com/drive/folders/1pU2q0ltm3i0rTyMueOvbaE_t0_FRJb0Q">Docs here!</a>
 
     </div>
     <div class="document-row" id="right">
@@ -73,7 +73,7 @@
             <h3>Academic Documents</h3>
             <p>Access Board of Studies notices, Minutes of Meetings, University Calendar provisions related to our Bachelor of Technology courses here!</p>
         </div>
-        <a class="button" target="_blank" href="https://drive.google.com/drive/folders/1gp-egHQSPMSSnI0vrFUPjV2S-gTqMgxF">Docs here!</a>
+        <a class="btn btn--theme-inv" target="_blank" href="https://drive.google.com/drive/folders/1gp-egHQSPMSSnI0vrFUPjV2S-gTqMgxF">Docs here!</a>
 
     </div>
     <!-- Add more rows as needed -->
