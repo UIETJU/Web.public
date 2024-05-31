@@ -135,11 +135,6 @@ textarea {
   transition: all 0.3s;
 }
 
-.exams {
-  font-weight: bold;
-  color: #004b82;
-}
-
 .gallery-desc-button-holder {
   display: flex;
   gap: 0.5rem;
@@ -509,6 +504,7 @@ table a:hover {
 }
 
 @media only screen and (max-width: 37.5em) {
+
   table th,
   td,
   tr {
@@ -777,6 +773,7 @@ table a:hover {
   transform: translateY(5px);
   box-shadow: none;
 }
+
 .btn--bg {
   padding: 1.4rem 5rem;
   font-size: 1.5rem;
@@ -801,6 +798,7 @@ table a:hover {
 }
 
 .sec-pad {
+  background-color: hwb(28 87% 3%);
   padding: 12rem 0;
 }
 
@@ -944,7 +942,7 @@ table a:hover {
 }
 
 .about {
-  background: #e1e6ea;
+  background: hsl(0, 0%, 100%);
 }
 
 .about__content {
@@ -1211,11 +1209,9 @@ table a:hover {
 /* Facilities */
 
 .contact {
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)
-    ),
+      rgba(0, 98, 185, 0.8)),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
@@ -1323,11 +1319,9 @@ table a:hover {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)
-    ),
+      rgba(0, 98, 185, 0.8)),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
@@ -2536,4 +2530,10 @@ iframe {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Misc Styling*/
+.exams {
+  font-weight: bold;
+  color: #004b82;
 }
