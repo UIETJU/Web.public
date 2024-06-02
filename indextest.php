@@ -16,7 +16,6 @@ try {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -106,7 +105,7 @@ try {
     <div class="chatbot-btn">
         <img src="assets/png/UieBot.png" alt="UIEBOT">
     </div>
-    <section id="Modal">
+
         <?php
         $sql = "SELECT image FROM Gallery";
         $result = $conn->query($sql);
