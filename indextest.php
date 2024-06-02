@@ -52,10 +52,15 @@ try {
     function convertGoogleDriveLink($url)
     {
         if (strpos($url, 'drive.google.com') !== false) {
-            if (preg_match('/file\/d\/(.*?)\/view/', $url, $matches)) {
+            if (preg_match('/open\?id=(.*)/', $url, $matches)) {
                 $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
             }
+
+
         }
+
+
+
         return $url; // Return the original URL if it doesn't match the expected pattern
     }
 
@@ -105,23 +110,26 @@ try {
     <div class="chatbot-btn">
         <img src="assets/png/UieBot.png" alt="UIEBOT">
     </div>
-        <?php
-        $sql = "SELECT image FROM Gallery";
-        $result = $conn->query($sql);
-        $flyers = [];
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
-                $url = $row['image'];
-                if (strpos($url, 'drive.google.com') !== false) {
-                    if (preg_match('/file\/d\/(.*?)\/view/', $url, $matches)) {
-                        $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
-                    }
+    <?php
+    $sql = "SELECT image FROM Gallery";
+    $result = $conn->query($sql);
+    $flyers = [];
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $url = $row['image'];
+            if (strpos($url, 'drive.google.com') !== false) {
+                if (preg_match('/open\?id=(.*)/', $url, $matches)) {
+                    $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
                 }
-                $flyers[] = $url;
             }
+
+
+
+            $flyers[] = $url;
         }
-        ?>
-        <?php if (count($flyers) > 0) : ?>
+    }
+    ?>
+    <?php if (count($flyers) > 0): ?>
             <div id="flyerModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
@@ -129,14 +137,14 @@ try {
                         <span class="prev">&#10094;</span>
                         <span class="next">&#10095;</span>
                         <div class="carousel-inner" id="carousel-inner">
-                            <?php foreach ($flyers as $index => $url) : ?>
-                                <img src="<?php echo htmlspecialchars($url); ?>" alt="Flyer <?php echo $index + 1; ?>" class="flyer-image <?php echo $index === 0 ? 'active' : ''; ?>">
+                            <?php foreach ($flyers as $index => $url): ?>
+                                    <img src="<?php echo htmlspecialchars($url); ?>" alt="Flyer <?php echo $index + 1; ?>" class="flyer-image <?php echo $index === 0 ? 'active' : ''; ?>">
                             <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
             </div>
-        <?php endif; ?>
+    <?php endif; ?>
 
     <section id="about" class="projects sec-pad-even">
         <div class="main-container">
@@ -156,12 +164,6 @@ try {
     <!-- Gallery Starts -->
     <section id="gallery" class="projects sec-pad-odd">
         <?php
-        require './../DB/db-connect.php';
-
-        if (!$conn) {
-            die("Connection Failed! " . mysqli_connect_error());
-        }
-
         $sql = "SELECT image, description, title, NoteURL, AlbumURL FROM Gallery";
         $result = $conn->query($sql);
         $slides = [];
@@ -169,10 +171,13 @@ try {
             while ($row = $result->fetch_assoc()) {
                 $url = $row['image'];
                 if (strpos($url, 'drive.google.com') !== false) {
-                    if (preg_match('/file\/d\/(.*?)\/view/', $url, $matches)) {
+                    if (preg_match('/open\?id=(.*)/', $url, $matches)) {
                         $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
                     }
                 }
+
+
+
                 $slides[] = [
                     'image' => $url,
                     'description' => $row['description'],
@@ -189,38 +194,38 @@ try {
             </h2>
             <div class="carousel-container">
                 <div class="carousel-slides">
-                    <?php foreach ($slides as $slide) : ?>
-                        <div class="carousel-slide">
-                            <div class="gallery-container">
-                                <div class="gallery-image-container">
-                                    <img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['title']; ?>" />
-                                </div>
-                                <div class="gallery-description">
-                                    <h1 class="gallery-desc-title"><?php echo $slide['title']; ?></h1>
-                                    <p class="gallery-desc-text"><?php echo $slide['description']; ?></p>
-                                    <div class="gallery-btn-holder">
-                                        <?php if (!empty($slide['NoteURL'])) : ?>
-                                            <a href="<?php echo $slide['NoteURL']; ?>" class="gallery-btn">
-                                                <i class="fa-solid fa-newspaper gallery-btn alt-btn btn"></i>
-                                            </a>
-                                        <?php endif; ?>
-                                        <?php if (!empty($slide['AlbumURL'])) : ?>
-                                            <a href="<?php echo $slide['AlbumURL']; ?>" class="gallery-btn">
-                                                <i class="fa-solid fa-images gallery-btn alt-btn btn"></i>
-                                            </a>
-                                        <?php endif; ?>
+                    <?php foreach ($slides as $slide): ?>
+                            <div class="carousel-slide">
+                                <div class="gallery-container">
+                                    <div class="gallery-image-container">
+                                        <img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['title']; ?>" />
+                                    </div>
+                                    <div class="gallery-description">
+                                        <h1 class="gallery-desc-title"><?php echo $slide['title']; ?></h1>
+                                        <p class="gallery-desc-text"><?php echo $slide['description']; ?></p>
+                                        <div class="gallery-btn-holder">
+                                            <?php if (!empty($slide['NoteURL'])): ?>
+                                                    <a href="<?php echo $slide['NoteURL']; ?>" class="gallery-btn">
+                                                        <i class="fa-solid fa-newspaper gallery-btn alt-btn btn"></i>
+                                                    </a>
+                                            <?php endif; ?>
+                                            <?php if (!empty($slide['AlbumURL'])): ?>
+                                                    <a href="<?php echo $slide['AlbumURL']; ?>" class="gallery-btn">
+                                                        <i class="fa-solid fa-images gallery-btn alt-btn btn"></i>
+                                                    </a>
+                                            <?php endif; ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     <?php endforeach; ?>
                 </div>
                 <button class="carousel-button prev ">&laquo;</button>
                 <button class="carousel-button next ">&raquo;</button>
             </div>
             <div class="carousel-indicators">
-                <?php for ($i = 0; $i < count($slides); $i++) : ?>
-                    <button class="carousel-indicator" data-slide-to="<?php echo $i; ?>"></button>
+                <?php for ($i = 0; $i < count($slides); $i++): ?>
+                        <button class="carousel-indicator" data-slide-to="<?php echo $i; ?>"></button>
                 <?php endfor; ?>
                 <button class="carousel-pause-play" aria-label="Pause/Play Button"><i class="fa-solid fa-pause"></i></button>
             </div>
@@ -232,10 +237,10 @@ try {
             <div class="notifications-container">
                 <?php
                 // Fetch notifications based on type
-                $types = ['academic', 'administrative', 'miscellaneous'];
+                $types = ['Academic', 'Administrative', 'Miscellaneous'];
 
                 foreach ($types as $type) {
-                    $sql = "SELECT title, file_url, posted_at FROM NotifyU WHERE type='$type' ORDER BY posted_at DESC";
+                    $sql = "SELECT title, file_url, posted_at FROM Notify WHERE type='$type' ORDER BY posted_at DESC";
                     $result = $conn->query($sql);
 
                     echo "<div class='notification-column' id='{$type}-notifications'>";
