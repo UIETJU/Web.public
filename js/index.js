@@ -67,84 +67,97 @@ if (
 //This Code snippet detects whether the screen is touch enabled or not.
 //It is being used to apply different stylings for more responsive UX.
 //It adds a classes touch/no-touch to the bidy dynamically.
+
 document.addEventListener('DOMContentLoaded', function () {
   if ('ontouchstart' in window || navigator.maxTouchPoints) {
-      document.body.classList.add('touch');
+    document.body.classList.add('touch');
+
+    document.querySelectorAll('.btn').forEach(button => {
+      button.addEventListener('touchstart', function () {
+        this.classList.add('hover');
+      });
+
+      button.addEventListener('touchend', function () {
+        const self = this;
+        setTimeout(function () {
+          self.classList.remove('hover');
+        }, 500); // Delay to simulate the hover state
+      });
+    });
   } else {
-      document.body.classList.add('no-touch');
+    document.body.classList.add('no-touch');
   }
 });
-
 
 //Dynamic MODAL Notifcations using Google Forms/AppScript
 //This file contains the script for new modal notification system. The system is designed to display multiple modals as available in the database.
 //The script ensures that modal is not displayed if the database is empty
 //The modal is displayed as a carousel for multiple notifications.
 //This is part of the google forms based novel CMS for easy web application updation/maintenance
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var modal = document.getElementById("flyerModal");
   if (modal) {
-      // Function to show the current image
-      function showImage(index) {
-          var carouselImages = document.getElementsByClassName("flyer-image");
-          for (var i = 0; i < carouselImages.length; i++) {
-              carouselImages[i].classList.remove("active");
-          }
-          carouselImages[index].classList.add("active");
+    // Function to show the current image
+    function showImage(index) {
+      var carouselImages = document.getElementsByClassName("flyer-image");
+      for (var i = 0; i < carouselImages.length; i++) {
+        carouselImages[i].classList.remove("active");
       }
+      carouselImages[index].classList.add("active");
+    }
 
-      // Initialize the current index
-      var currentIndex = 0;
+    // Initialize the current index
+    var currentIndex = 0;
 
-      // Function to display the modal after a delay
-      function displayModal() {
-          setTimeout(function() {
-              modal.style.display = "block";
-          }, 1000); // Display modal after 1 second (1000 milliseconds)
+    // Function to display the modal after a delay
+    function displayModal() {
+      setTimeout(function () {
+        modal.style.display = "block";
+      }, 1000); // Display modal after 1 second (1000 milliseconds)
+    }
+
+    // Call displayModal once to show the modal after the delay
+    displayModal();
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
       }
+    };
 
-      // Call displayModal once to show the modal after the delay
-      displayModal();
+    // Optionally, add a function to close the modal with the escape key
+    document.addEventListener('keydown', function (event) {
+      if (event.key === "Escape") {
+        modal.style.display = "none";
+      }
+    });
 
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
+    // Get the next and previous buttons
+    var next = document.getElementsByClassName("next")[0];
+    var prev = document.getElementsByClassName("prev")[0];
 
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-          modal.style.display = "none";
-      };
+    // When the user clicks on next button
+    next.onclick = function () {
+      var carouselImages = document.getElementsByClassName("flyer-image");
+      currentIndex = (currentIndex + 1) % carouselImages.length;
+      showImage(currentIndex);
+    };
 
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-          if (event.target == modal) {
-              modal.style.display = "none";
-          }
-      };
-
-      // Optionally, add a function to close the modal with the escape key
-      document.addEventListener('keydown', function(event) {
-          if (event.key === "Escape") {
-              modal.style.display = "none";
-          }
-      });
-
-      // Get the next and previous buttons
-      var next = document.getElementsByClassName("next")[0];
-      var prev = document.getElementsByClassName("prev")[0];
-
-      // When the user clicks on next button
-      next.onclick = function() {
-          var carouselImages = document.getElementsByClassName("flyer-image");
-          currentIndex = (currentIndex + 1) % carouselImages.length;
-          showImage(currentIndex);
-      };
-
-      // When the user clicks on previous button
-      prev.onclick = function() {
-          var carouselImages = document.getElementsByClassName("flyer-image");
-          currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
-          showImage(currentIndex);
-      };
+    // When the user clicks on previous button
+    prev.onclick = function () {
+      var carouselImages = document.getElementsByClassName("flyer-image");
+      currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
+      showImage(currentIndex);
+    };
   }
 });
 
