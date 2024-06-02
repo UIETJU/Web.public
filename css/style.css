@@ -769,7 +769,7 @@ table a:hover {
 
 }
 
-.btn:active {
+.btn:hover{
   transform: translateY(5px);
   box-shadow: none;
 }
