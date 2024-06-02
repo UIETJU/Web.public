@@ -1,26 +1,19 @@
 <?php
-require '../../DB/db-connect.php';
+require './../DB/db-connect.php';
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-if (!$conn) {
-  die("Connection Failed! " . mysqli_connect_error());
-}
+try {
+  $conn = mysqli_init();
+  mysqli_options($conn, MYSQLI_OPT_CONNECT_TIMEOUT, 10); // Set timeout to 10 seconds
+  mysqli_real_connect($conn, $server, $dbUserName, $dbUserPwd, $database);
 
-$sql = "SELECT image FROM Gallery";
-$result = $conn->query($sql);
-
-$flyers = [];
-if ($result->num_rows > 0) {
-  while ($row = $result->fetch_assoc()) {
-    $url = $row['image'];
-    if (strpos($url, 'drive.google.com') !== false) {
-      if (preg_match('/file\/d\/(.*?)\/view/', $url, $matches)) {
-        $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
-      }
-    }
-    $flyers[] = $url;
+  if (!$conn) {
+    throw new mysqli_sql_exception("Connection failed: " . mysqli_connect_error());
   }
+} catch (mysqli_sql_exception $e) {
+  error_log($e->getMessage());  // Log the error message
+  die("Database connection failed: " . $e->getMessage());
 }
-$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -86,6 +79,23 @@ $conn->close();
   <div class="chatbot-btn">
     <img src="assets/png/UieBot.png" alt="UIEBOT">
   </div>
+  <?php
+  $sql = "SELECT image FROM Gallery";
+  $result = $conn->query($sql);
+
+  $flyers = [];
+  if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+      $url = $row['image'];
+      if (strpos($url, 'drive.google.com') !== false) {
+        if (preg_match('/file\/d\/(.*?)\/view/', $url, $matches)) {
+          $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
+        }
+      }
+      $flyers[] = $url;
+    }
+  }
+  ?>
 
   <?php if (count($flyers) > 0) : ?>
     <div id="flyerModal" class="modal">
@@ -166,23 +176,6 @@ $conn->close();
       </div>
     </div>
   </section>
-  <!-- Events Section Ends -->
-  <!-- Youtube Embeds -->
-  <!-- <section id="youtube-embeds" class="projects sec-pad-alt">
-        <div class="main-container-max">
-          <h2 class="heading heading-sec">
-            <span class="heading-sec__main heading-text--small">Video Presentations</span>
-          </h2>
-          <div class="yt-embed">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/aDmVDAZOccw?si=ftqX7MUf8GnypPQ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/58GWIXH9-S8?si=PHAEp2rEOtAsTBqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
-          </div>
-        </div>
-      </section> -->
-
-  <!-- Youtube embeds ends here -->
-  </div>
-  </section>
   <!-- Gallery Starts -->
   <section id="gallery" class="projects sec-pad-alt">
     <div class="main-container">
@@ -245,7 +238,8 @@ $conn->close();
   <script src="./js/index.js"></script>
   <script src="./js/preload.js"></script>
   <script src="./js/gallery.js"></script>
-  <script src="./js/chatbot.js"></script> 
+  <script src="./js/chatbot.js"></script>
   <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
 </body>
+
 </html>
