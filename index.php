@@ -42,15 +42,14 @@ $conn->close();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="University Institute of Engineering & Technology (UIET) Kathua, is a constituent Engineering College of University of Jammu, J&K, India.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>University Institute of Engineering and Technology, Kathua</title>
+  <title>Home - Jammu University's Institute of Engineering and Technology, Kathua</title>
   <link rel="icon" href="./assets/png/uiet_header.png">
   <link rel="stylesheet" href="css/style.css?t=<?php echo time(); ?>">
   <link rel="stylesheet" href="./css/chatbot.css?t=<?php echo time(); ?>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="preload" href="./assets/events/Cultural FUNanaza.JPG" as="image">
+  <script src="https://kit.fontawesome.com/ed322df7d9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -60,7 +59,7 @@ $conn->close();
     <div class="home-hero__content">
       <h1 class="heading-primary" onclick="newQuote()">
         <ul>
-          <li>University Institute of Engineering and Technology, Kathua</li>
+          <li>Jammu University's Institute of Engineering and Technology, Kathua</li>
           <li id="quoteDisplay"></li>
         </ul>
       </h1>
@@ -243,12 +242,10 @@ $conn->close();
     </div>
   </Section>
   <?php require_once "components/footer.php" ?>
-  <script src="./js/script.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/preload.js"></script>
   <script src="./js/gallery.js"></script>
-  <script src="./js/chatbot.js"></script>
+  <script src="./js/chatbot.js"></script> 
   <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
 </body>
-
 </html>

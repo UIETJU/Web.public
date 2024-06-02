@@ -24,7 +24,7 @@
         <li class="header__link-wrapper" id="submenu-parent">
           <a href="#" class="header__link--main"> Academics </a>
           <ul class="submenu">
-            <a href="./courses-and-syllabus.php">Programs</a>
+            <a href="./courses.php">Programs</a>
             <a href="./placements.php">Placements</a>
             <a href="https://unijammuopac.libsys10.in"> eLibrary </a>
             <a href="./results.php">Results</a>
@@ -38,7 +38,7 @@
           <a href="#" class="header__link--main">Help!</a>
           <ul class="submenu">
             <a href="https://forms.gle/bSRwEuV6sBcPyTRo6">uGRAMS</a>
-            <a href="/contact-us.php">Contact us here!</a>
+            <a href="/contact.php">Contact us here!</a>
           </ul>
         </li>
       </ul>
@@ -59,7 +59,7 @@
           <a href="#about"> About </a>
         </li>
         <li class="header__sm-menu-link">
-          <a href="./courses-and-syllabus.php">Programs</a>
+          <a href="./courses.php">Programs</a>
         </li>
         <li class="header__sm-menu-link">
           <a href="./amenities.php"> Campus </a>
@@ -91,7 +91,7 @@
         </li>
         <li class="header__sm-menu-link">
           <a href="https://forms.gle/bSRwEuV6sBcPyTRo6">uGRAMS</a>
-          <a href="/contact-us.php">Contact us here!</a>
+          <a href="/contact.php">Contact us here!</a>
         </li>
       </ul>
     </div>

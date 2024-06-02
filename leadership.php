@@ -33,7 +33,7 @@ mysqli_close($conn);
         content=" The University Institute of Engineering & Technology (UIET) was established by the University of Jammu in 2017 as a ‘Centre of Excellence to provide quality education in Engineering & Technology." />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-        Leadership - University Institute of Engineering and Technology, Kathua
+        Leadership - Jammu University's Institute of Engineering and Technology, Kathua
     </title>
     <link rel="icon" href="./assets/png/uiet_header.png" />
     <link rel="stylesheet" href="css/style.css<?php echo "?t=" . time(); ?>" />
@@ -41,9 +41,7 @@ mysqli_close($conn);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/ed322df7d9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>

@@ -3,7 +3,7 @@
     <h2 class="uiet-footer-nav-links-title">Navigation</h2>
     <div class="uiet-footer-nav-links uiet--grid-cols-4">
       <a href="../index.php">Home</a>
-      <a href="../courses-and-syllabus.php">Programs</a>
+      <a href="../courses.php">Programs</a>
       <a href="./index.php#admission">Admissions </a>
       <a href="../amenities.php">Campus</a>
       <a href="../leadership.php">Leadership</a>
@@ -13,7 +13,7 @@
       <a href="../document.php">Documents</a>
       <a href="../results.php">Results</a>
       <a href="https://forms.gle/bSRwEuV6sBcPyTRo6">uGRAMS</a>
-      <a href="../contact-us.php">Contact us here!</a>
+      <a href="../contact.php">Contact us here!</a>
       <a href="https://unijammuopac.libsys10.in">eLibrary</a>
       <a href="https://jammuuniversity.ac.in">UoJ</a>
     </div>
