@@ -82,18 +82,17 @@ try {
 
   <!--Modal begins-->
   <?php
-  $sql = "SELECT image FROM Gallery";
+  $sql = "SELECT flyerURL FROM Modal";
   $result = $conn->query($sql);
 
   $flyers = [];
   if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-      $url = $row['image'];
+      $url = $row['flyerURL'];
       if (strpos($url, 'drive.google.com') !== false) {
-        if (preg_match('/file\/d\/(.*?)\/view/', $url, $matches)) {
-          $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
+        if (preg_match('/open\?id=(.*)/', $url, $matches)) {
+            $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
         }
-      }
       $flyers[] = $url;
     }
   }
