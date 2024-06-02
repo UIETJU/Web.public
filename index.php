@@ -79,6 +79,8 @@ try {
   <div class="chatbot-btn">
     <img src="assets/png/UieBot.png" alt="UIEBOT">
   </div>
+
+  <!--Modal begins-->
   <?php
   $sql = "SELECT image FROM Gallery";
   $result = $conn->query($sql);
@@ -114,6 +116,7 @@ try {
     </div>
   <?php endif; ?>
 
+  <!-- About begins -->
   <section id="about" class="about sec-pad">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-med">
@@ -158,6 +161,7 @@ try {
       </div>
     </div>
   </section>
+
   <!-- Events Section Start -->
   <section id="uiet-events" class="projects sec-pad">
     <div class="main-container">
