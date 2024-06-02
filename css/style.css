@@ -769,8 +769,12 @@ table a:hover {
 
 }
 
-.btn:hover{
-  transform: translateY(5px);
+body.touch .btn:hover{
+  transform: translateY(8px);
+  box-shadow: none;
+}
+body.no-touch .btn:active{
+  transform: translateY(8px);
   box-shadow: none;
 }
 

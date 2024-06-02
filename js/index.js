@@ -64,6 +64,17 @@ if (
     newQuote();
   }, 800);
 }
+//This Code snippet detects whether the screen is touch enabled or not.
+//It is being used to apply different stylings for more responsive UX.
+//It adds a classes touch/no-touch to the bidy dynamically.
+document.addEventListener('DOMContentLoaded', function () {
+  if ('ontouchstart' in window || navigator.maxTouchPoints) {
+      document.body.classList.add('touch');
+  } else {
+      document.body.classList.add('no-touch');
+  }
+});
+
 
 //Dynamic MODAL Notifcations using Google Forms/AppScript
 //This file contains the script for new modal notification system. The system is designed to display multiple modals as available in the database.
