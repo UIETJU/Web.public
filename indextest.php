@@ -105,11 +105,9 @@ try {
     <div class="chatbot-btn">
         <img src="assets/png/UieBot.png" alt="UIEBOT">
     </div>
-
         <?php
         $sql = "SELECT image FROM Gallery";
         $result = $conn->query($sql);
-
         $flyers = [];
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
@@ -139,7 +137,6 @@ try {
                 </div>
             </div>
         <?php endif; ?>
-    </section>
 
     <section id="about" class="projects sec-pad-even">
         <div class="main-container">
