@@ -55,8 +55,6 @@ try {
             if (preg_match('/open\?id=(.*)/', $url, $matches)) {
                 $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
             }
-
-
         }
 
 
@@ -111,12 +109,12 @@ try {
         <img src="assets/png/UieBot.png" alt="UIEBOT">
     </div>
     <?php
-    $sql = "SELECT image FROM Gallery";
+    $sql = "SELECT flyerURL FROM Modal";
     $result = $conn->query($sql);
     $flyers = [];
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            $url = $row['image'];
+            $url = $row['flyerURL'];
             if (strpos($url, 'drive.google.com') !== false) {
                 if (preg_match('/open\?id=(.*)/', $url, $matches)) {
                     $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
@@ -129,21 +127,21 @@ try {
         }
     }
     ?>
-    <?php if (count($flyers) > 0): ?>
-            <div id="flyerModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="carousel">
-                        <span class="prev">&#10094;</span>
-                        <span class="next">&#10095;</span>
-                        <div class="carousel-inner" id="carousel-inner">
-                            <?php foreach ($flyers as $index => $url): ?>
-                                    <img src="<?php echo htmlspecialchars($url); ?>" alt="Flyer <?php echo $index + 1; ?>" class="flyer-image <?php echo $index === 0 ? 'active' : ''; ?>">
-                            <?php endforeach; ?>
-                        </div>
+    <?php if (count($flyers) > 0) : ?>
+        <div id="flyerModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="carousel">
+                    <span class="prev">&#10094;</span>
+                    <span class="next">&#10095;</span>
+                    <div class="carousel-inner" id="carousel-inner">
+                        <?php foreach ($flyers as $index => $url) : ?>
+                            <img src="<?php echo htmlspecialchars($url); ?>" alt="Flyer <?php echo $index + 1; ?>" class="flyer-image <?php echo $index === 0 ? 'active' : ''; ?>">
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
+        </div>
     <?php endif; ?>
 
     <section id="about" class="projects sec-pad-even">
@@ -194,38 +192,38 @@ try {
             </h2>
             <div class="carousel-container">
                 <div class="carousel-slides">
-                    <?php foreach ($slides as $slide): ?>
-                            <div class="carousel-slide">
-                                <div class="gallery-container">
-                                    <div class="gallery-image-container">
-                                        <img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['title']; ?>" />
-                                    </div>
-                                    <div class="gallery-description">
-                                        <h1 class="gallery-desc-title"><?php echo $slide['title']; ?></h1>
-                                        <p class="gallery-desc-text"><?php echo $slide['description']; ?></p>
-                                        <div class="gallery-btn-holder">
-                                            <?php if (!empty($slide['NoteURL'])): ?>
-                                                    <a href="<?php echo $slide['NoteURL']; ?>" class="gallery-btn">
-                                                        <i class="fa-solid fa-newspaper gallery-btn alt-btn btn"></i>
-                                                    </a>
-                                            <?php endif; ?>
-                                            <?php if (!empty($slide['AlbumURL'])): ?>
-                                                    <a href="<?php echo $slide['AlbumURL']; ?>" class="gallery-btn">
-                                                        <i class="fa-solid fa-images gallery-btn alt-btn btn"></i>
-                                                    </a>
-                                            <?php endif; ?>
-                                        </div>
+                    <?php foreach ($slides as $slide) : ?>
+                        <div class="carousel-slide">
+                            <div class="gallery-container">
+                                <div class="gallery-image-container">
+                                    <img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['title']; ?>" />
+                                </div>
+                                <div class="gallery-description">
+                                    <h1 class="gallery-desc-title"><?php echo $slide['title']; ?></h1>
+                                    <p class="gallery-desc-text"><?php echo $slide['description']; ?></p>
+                                    <div class="gallery-btn-holder">
+                                        <?php if (!empty($slide['NoteURL'])) : ?>
+                                            <a href="<?php echo $slide['NoteURL']; ?>" class="gallery-btn">
+                                                <i class="fa-solid fa-newspaper gallery-btn alt-btn btn"></i>
+                                            </a>
+                                        <?php endif; ?>
+                                        <?php if (!empty($slide['AlbumURL'])) : ?>
+                                            <a href="<?php echo $slide['AlbumURL']; ?>" class="gallery-btn">
+                                                <i class="fa-solid fa-images gallery-btn alt-btn btn"></i>
+                                            </a>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     <?php endforeach; ?>
                 </div>
                 <button class="carousel-button prev ">&laquo;</button>
                 <button class="carousel-button next ">&raquo;</button>
             </div>
             <div class="carousel-indicators">
-                <?php for ($i = 0; $i < count($slides); $i++): ?>
-                        <button class="carousel-indicator" data-slide-to="<?php echo $i; ?>"></button>
+                <?php for ($i = 0; $i < count($slides); $i++) : ?>
+                    <button class="carousel-indicator" data-slide-to="<?php echo $i; ?>"></button>
                 <?php endfor; ?>
                 <button class="carousel-pause-play" aria-label="Pause/Play Button"><i class="fa-solid fa-pause"></i></button>
             </div>

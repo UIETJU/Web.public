@@ -1,12 +1,10 @@
 <?php
 require '../../DB/db-connect.php';
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
 try {
   $conn = mysqli_init();
   mysqli_options($conn, MYSQLI_OPT_CONNECT_TIMEOUT, 10); // Set timeout to 10 seconds
   mysqli_real_connect($conn, $server, $dbUserName, $dbUserPwd, $database);
-
   if (!$conn) {
     throw new mysqli_sql_exception("Connection failed: " . mysqli_connect_error());
   }
@@ -15,7 +13,6 @@ try {
   die("Database connection failed: " . $e->getMessage());
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +44,6 @@ try {
 
 <body>
   <?php require_once "components/main-header.php"; ?>
-
   <section class="home-hero" id="home">
     <div class="home-hero__content">
       <h1 class="heading-primary" onclick="newQuote()">
@@ -58,7 +54,6 @@ try {
       </h1>
     </div>
   </section>
-
   <div class="chatbox">
     <div class="chatbox--bar">
       <span>UIEboT</span>
@@ -91,13 +86,13 @@ try {
       $url = $row['flyerURL'];
       if (strpos($url, 'drive.google.com') !== false) {
         if (preg_match('/open\?id=(.*)/', $url, $matches)) {
-            $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
+          $url = 'https://lh3.googleusercontent.com/d/' . $matches[1];
         }
+      }
       $flyers[] = $url;
     }
   }
   ?>
-
   <?php if (count($flyers) > 0) : ?>
     <div id="flyerModal" class="modal">
       <div class="modal-content">
@@ -171,7 +166,6 @@ try {
         <!--CALENDAR-->
         <div class="calendar-desktop">
           <iframe src="https://embed.styledcalendar.com/#IOYkzSeHNEIQq7dX4ASg" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
-
         </div>
         <div class="calendar-mobile">
           <object data="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23F6BF26&ctz=Asia%2FKolkata&showNav=0&showTitle=1&showPrint=0&showTz=0&showCalendars=0&showTabs=0&mode=AGENDA&src=aXRjZWxsLnVpZXRqdUBnbWFpbC5jb20&color=%23039BE5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></object>
