@@ -161,3 +161,69 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+//Gallery
+document.addEventListener('DOMContentLoaded', function () {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const nextButton = document.querySelector('.carousel-button.next');
+  const prevButton = document.querySelector('.carousel-button.prev');
+  const indicators = document.querySelectorAll('.carousel-indicator');
+  const pausePlayButton = document.querySelector('.carousel-pause-play');
+  let currentIndex = 0;
+  let isPlaying = true;
+  let intervalId;
+
+  function updateCarousel() {
+    const slidesContainer = document.querySelector('.carousel-slides');
+    slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    indicators.forEach((indicator, index) => {
+      if (index === currentIndex) {
+        indicator.classList.add('active');
+      } else {
+        indicator.classList.remove('active');
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateCarousel();
+  }
+
+  function togglePlayPause() {
+    if (isPlaying) {
+      clearInterval(intervalId);
+      pausePlayButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+    } else {
+      intervalId = setInterval(nextSlide, 3000);
+      pausePlayButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
+    }
+    isPlaying = !isPlaying;
+  }
+
+  nextButton.addEventListener('click', nextSlide);
+  prevButton.addEventListener('click', prevSlide);
+  pausePlayButton.addEventListener('click', togglePlayPause);
+
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+      currentIndex = index;
+      updateCarousel();
+    });
+  });
+
+  intervalId = setInterval(nextSlide, 3000);
+
+  // Hide prev/next buttons on mobile
+  if (window.innerWidth <= 780) {
+    prevButton.style.display = 'none';
+    nextButton.style.display = 'none';
+  }
+});
+
+
