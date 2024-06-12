@@ -62,7 +62,7 @@
           <a href="./courses.php">Programs</a>
         </li>
         <li class="header__sm-menu-link">
-          <a href="./amenities.php"> Campus </a>
+          <a href="./campus.php"> Campus </a>
           <a href="https://youtu.be/rV5JhCceHgo">Campus Tour</a>
         </li>
         <li class="header__sm-menu-link">

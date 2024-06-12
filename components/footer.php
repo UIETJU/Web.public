@@ -5,7 +5,7 @@
       <a href="../index.php">Home</a>
       <a href="../courses.php">Programs</a>
       <a href="./index.php#admission">Admissions </a>
-      <a href="../amenities.php">Campus</a>
+      <a href="../campus.php">Campus</a>
       <a href="../leadership.php">Leadership</a>
       <a href="../faculty.php">Faculty</a>
       <a href="../placements.php">Placements</a>
