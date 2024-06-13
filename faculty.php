@@ -47,7 +47,7 @@ mysqli_close($conn);
 
 <body>
   <?php require_once "components/navbar.php" ?>
-  <section id="faculty" class="projects sec-pad">
+  <section id="faculty" class="projects sec-pad--top">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-bg">
         <span class="heading-sec__main">Faculty</span>
@@ -57,40 +57,40 @@ mysqli_close($conn);
         <?php
         if (!empty($faculty_row))
           foreach ($faculty_row as $rows) {
-            ?>
-              <div class="uiet--faculty-card" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url(<?php echo "https://lh3.googleusercontent.com/d/" . explode("id=", $rows['photo'])[1] ?>);">
-                <div class="uiet--faculty-info">
-                  <h4>
-                    <?php echo $rows['name']; ?>
-                  </h4>
-                  <span>
-                    <?php echo $rows['role'] . " - " . $rows['department']; ?>
-                  </span>
-                  <p class="uiet--faculty-qualifications">
-                    <?php echo $rows['qualifications']; ?>
-                  </p>
-                  <p class="uiet--faculty-bio">
-                    <?php echo $rows['bio']; ?>
-                  </p>
-                  <div class="faculty-social-media-handles">
-                    <!-- <?php //echo "<a href=\"tel:$rows[phone]\"><i class=\"fa-solid fa-phone\" style=\"color: #11d531;\"></i></a>"; 
-                        ?> -->
-                    <?php echo "<a href=\"mailto:$rows[email]\"><i class=\"fa-solid fa-envelope\" style=\"color: #dd8e1c;\"></i></a>"; ?>
-                    <?php
-                    if ($rows["linkedinUrl"] != null && !str_contains($rows["linkedinUrl"], "NULL")) {
-                      if (!str_contains($rows['linkedinUrl'], 'http')) {
-                        $linkedinUrl = "https://" . $rows['linkedinUrl'];
-                        echo "<a href=\"$linkedinUrl\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\" style=\"color: #004aff;\"></i></a>";
-                      } else {
-                        echo "<a href=\"$rows[linkedinUrl]\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\" style=\"color: #004aff;\"></i></a>";
-                      }
-                    }
-                    ?>
-                    <?php echo "<a href=\"$rows[CVURL]\" target=\"_blank\"><i class=\"fa-solid fa-file-pdf\" style=\"color: #f40;\"></i></a>"; ?>
-                  </div>
-                </div>
+        ?>
+          <div class="uiet--faculty-card" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url(<?php echo "https://lh3.googleusercontent.com/d/" . explode("id=", $rows['photo'])[1] ?>);">
+            <div class="uiet--faculty-info">
+              <h4>
+                <?php echo $rows['name']; ?>
+              </h4>
+              <span>
+                <?php echo $rows['role'] . " - " . $rows['department']; ?>
+              </span>
+              <p class="uiet--faculty-qualifications">
+                <?php echo $rows['qualifications']; ?>
+              </p>
+              <p class="uiet--faculty-bio">
+                <?php echo $rows['bio']; ?>
+              </p>
+              <div class="faculty-social-media-handles">
+                <!-- <?php //echo "<a href=\"tel:$rows[phone]\"><i class=\"fa-solid fa-phone\" style=\"color: #11d531;\"></i></a>"; 
+                      ?> -->
+                <?php echo "<a href=\"mailto:$rows[email]\"><i class=\"fa-solid fa-envelope\" style=\"color: #dd8e1c;\"></i></a>"; ?>
+                <?php
+                if ($rows["linkedinUrl"] != null && !str_contains($rows["linkedinUrl"], "NULL")) {
+                  if (!str_contains($rows['linkedinUrl'], 'http')) {
+                    $linkedinUrl = "https://" . $rows['linkedinUrl'];
+                    echo "<a href=\"$linkedinUrl\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\" style=\"color: #004aff;\"></i></a>";
+                  } else {
+                    echo "<a href=\"$rows[linkedinUrl]\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\" style=\"color: #004aff;\"></i></a>";
+                  }
+                }
+                ?>
+                <?php echo "<a href=\"$rows[CVURL]\" target=\"_blank\"><i class=\"fa-solid fa-file-pdf\" style=\"color: #f40;\"></i></a>"; ?>
               </div>
-          <?php } ?>
+            </div>
+          </div>
+        <?php } ?>
         <!-- Grid Ends -->
       </div>
     </div>

@@ -6,15 +6,17 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJ2HYZPRCX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-VJ2HYZPRCX');
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content=" The University Institute of Engineering & Technology (UIET) was established by the University of Jammu in 2017 as a ‘Centre of Excellence to provide quality education in Engineering & Technology." />
+  <meta name="description" content=" The University Institute of Engineering & Technology (UIET) was established by the University of Jammu in 2017 as a ‘Centre of Excellence to provide quality education in Engineering & Technology." />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>
     Courses - Jammu University's Institute of Engineering and Technology,Kathua
@@ -23,14 +25,13 @@
   <link rel="stylesheet" href="css/styles.css<?php echo "?t=" . time(); ?>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/ed322df7d9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <?php require_once "components/navbar.php" ?>
-  <section class="projects sec-pad uiet--animated-grid" style="background-color: #fff">
+  <section class="projects sec-pad--top uiet--animated-grid" style="background-color: #fff">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-bg">
         <span class="heading-sec__main">Courses and Syllabus</span>
@@ -43,8 +44,7 @@
       <div class="projects__content">
         <div class="projects__row">
           <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/cse.jpg" alt="Computer Science and Engineering" class="projects__row-img"
-              loading="lazy" />
+            <img src="./assets/jpeg/cse.jpg" alt="Computer Science and Engineering" class="projects__row-img" loading="lazy" />
           </div>
           <div class="projects__row-content">
             <h3 class="projects__row-content-title">
@@ -56,8 +56,7 @@
               offering Bachelor of Technology course in Computer Science and
               Engineering (CSE) with intake of 60 seats.
             </p>
-            <a href="./documents/CSE_syllabus_2018.pdf" class="btn btn--med btn--theme dynamicBgClr"
-              target="_blank">Download Syllabus</a>
+            <a href="./documents/CSE_syllabus_2018.pdf" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Download Syllabus</a>
           </div>
         </div>
 
@@ -74,8 +73,7 @@
                 University offering Bachelor of Technology course in Civil
                 Engineering (CE) with an intake of 60 seats.
               </p>
-              <a href="./documents/CIVIL_syllabus.pdf" class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank">Download Syllabus</a>
+              <a href="./documents/CIVIL_syllabus.pdf" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Download Syllabus</a>
             </div>
           </div>
         </div>

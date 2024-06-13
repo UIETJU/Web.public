@@ -58,7 +58,7 @@ $committees = [
     <nav>
         <?php require_once "components/navbar.php" ?>
     </nav>
-    <section class="projects sec-pad">
+    <section class="projects sec-pad--top">
         <div class="main-container">
             <h2 class="heading heading-sec heading-sec__mb-bg">
                 <span class="heading-sec__main">Committees</span>
@@ -68,12 +68,12 @@ $committees = [
 
 
         <div class="committees">
-            <?php foreach ($committees as $currentCommittee): ?>
-                        <div class="committee-card">
-                            <h1 class="committee-title"><?= htmlspecialchars($currentCommittee->name); ?></h1>
-                            <p class="committee-description"><?= htmlspecialchars($currentCommittee->description); ?></p>
-                            <a class="btn btn--theme-inv" target="_blank" href="<?= htmlspecialchars($currentCommittee->link); ?>">Members</a>
-                        </div>
+            <?php foreach ($committees as $currentCommittee) : ?>
+                <div class="committee-card">
+                    <h1 class="committee-title"><?= htmlspecialchars($currentCommittee->name); ?></h1>
+                    <p class="committee-description"><?= htmlspecialchars($currentCommittee->description); ?></p>
+                    <a class="btn btn--theme-inv" target="_blank" href="<?= htmlspecialchars($currentCommittee->link); ?>">Members</a>
+                </div>
             <?php endforeach; ?>
 
         </div>
