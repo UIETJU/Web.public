@@ -43,8 +43,8 @@
         </li>
       </ul>
       <div class="header__main-ham-menu-cont">
-        <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-        <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
+        <img src="./assets/svg/ham-menu.svg" style="filter: invert(1);" alt="hamburger menu" class="header__main-ham-menu" />
+        <img src="./assets/svg/ham-menu-close.svg" style="filter: invert(1);" alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
       </div>
     </div>
   </div>
