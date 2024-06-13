@@ -317,7 +317,7 @@ try {
     </Section>
 
     <?php require_once "components/footer.php" ?>
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js/<?= time(); ?>"></script>
     <script src="./js/preload.js"></script>
     <!-- <script src="./js/chatbot.js"></script> -->
     <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
