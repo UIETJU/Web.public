@@ -1,41 +1,41 @@
-const hamMenuBtn = document.querySelector(".header__main-ham-menu-cont");
-const smallMenu = document.querySelector(".header__sm-menu");
-const headerHamMenuBtn = document.querySelector(".header__main-ham-menu");
+const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont');
+const smallMenu = document.querySelector('.header__sm-menu');
+const headerHamMenuBtn = document.querySelector('.header__main-ham-menu');
 const headerHamMenuCloseBtn = document.querySelector(
-  ".header__main-ham-menu-close"
+  '.header__main-ham-menu-close'
 );
-const headerSmallMenuLinks = document.querySelectorAll(".header__sm-menu-link");
-const mainHeader = document.querySelector(".header");
-const transparentHeader = document.querySelector(".transparent-header");
-const headerLinks = document.querySelectorAll(".header__link");
+const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link');
+const mainHeader = document.querySelector('.header');
+const transparentHeader = document.querySelector('.transparent-header');
+const headerLinks = document.querySelectorAll('.header__link');
 
-hamMenuBtn.addEventListener("click", () => {
-  if (smallMenu.classList.contains("header__sm-menu--active")) {
-    smallMenu.classList.remove("header__sm-menu--active");
+hamMenuBtn.addEventListener('click', () => {
+  if (smallMenu.classList.contains('header__sm-menu--active')) {
+    smallMenu.classList.remove('header__sm-menu--active');
   } else {
-    smallMenu.classList.add("header__sm-menu--active");
+    smallMenu.classList.add('header__sm-menu--active');
   }
-  if (headerHamMenuBtn.classList.contains("d-none")) {
-    headerHamMenuBtn.classList.remove("d-none");
-    headerHamMenuCloseBtn.classList.add("d-none");
+  if (headerHamMenuBtn.classList.contains('d-none')) {
+    headerHamMenuBtn.classList.remove('d-none');
+    headerHamMenuCloseBtn.classList.add('d-none');
   } else {
-    headerHamMenuBtn.classList.add("d-none");
-    headerHamMenuCloseBtn.classList.remove("d-none");
+    headerHamMenuBtn.classList.add('d-none');
+    headerHamMenuCloseBtn.classList.remove('d-none');
   }
 });
 
 for (let i = 0; i < headerSmallMenuLinks.length; i++) {
-  headerSmallMenuLinks[i].addEventListener("click", () => {
-    smallMenu.classList.remove("header__sm-menu--active");
-    headerHamMenuBtn.classList.remove("d-none");
-    headerHamMenuCloseBtn.classList.add("d-none");
+  headerSmallMenuLinks[i].addEventListener('click', () => {
+    smallMenu.classList.remove('header__sm-menu--active');
+    headerHamMenuBtn.classList.remove('d-none');
+    headerHamMenuCloseBtn.classList.add('d-none');
   });
 }
 
 // Logo Click Event
-const headerLogoConatiner = document.querySelector(".header__logo-container");
-headerLogoConatiner.addEventListener("click", () => {
-  location.href = "index.php";
+const headerLogoConatiner = document.querySelector('.header__logo-container');
+headerLogoConatiner.addEventListener('click', () => {
+  location.href = 'index.php';
 });
 
 // Quote Generator
@@ -52,12 +52,12 @@ var quotes = [
 // without if statement this script would run on all pages causing errors in console. This script will check if the page is homepage or not and if it is
 // homepage then the quote will show!
 if (
-  window.location.href.includes("index.php") ||
-  !window.location.href.includes(".php")
+  window.location.href.includes('index.php') ||
+  !window.location.href.includes('.php')
 ) {
   function newQuote() {
     var num = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quoteDisplay").innerHTML = quotes[num];
+    document.getElementById('quote').innerHTML = quotes[num];
   }
 
   setTimeout(() => {
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if ('ontouchstart' in window || navigator.maxTouchPoints) {
     document.body.classList.add('touch');
 
-    document.querySelectorAll('.btn').forEach(button => {
+    document.querySelectorAll('.btn').forEach((button) => {
       button.addEventListener('touchstart', function () {
         this.classList.add('hover');
       });
@@ -95,15 +95,15 @@ document.addEventListener('DOMContentLoaded', function () {
 //The modal is displayed as a carousel for multiple notifications.
 //This is part of the google forms based novel CMS for easy web application updation/maintenance
 document.addEventListener('DOMContentLoaded', function () {
-  var modal = document.getElementById("flyerModal");
+  var modal = document.getElementById('flyerModal');
   if (modal) {
     // Function to show the current image
     function showImage(index) {
-      var carouselImages = document.getElementsByClassName("flyer-image");
+      var carouselImages = document.getElementsByClassName('flyer-image');
       for (var i = 0; i < carouselImages.length; i++) {
-        carouselImages[i].classList.remove("active");
+        carouselImages[i].classList.remove('active');
       }
-      carouselImages[index].classList.add("active");
+      carouselImages[index].classList.add('active');
     }
 
     // Initialize the current index
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to display the modal after a delay
     function displayModal() {
       setTimeout(function () {
-        modal.style.display = "block";
+        modal.style.display = 'block';
       }, 1000); // Display modal after 1 second (1000 milliseconds)
     }
 
@@ -120,42 +120,43 @@ document.addEventListener('DOMContentLoaded', function () {
     displayModal();
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName('close')[0];
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
-      modal.style.display = "none";
+      modal.style.display = 'none';
     };
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
       if (event.target == modal) {
-        modal.style.display = "none";
+        modal.style.display = 'none';
       }
     };
 
     // Optionally, add a function to close the modal with the escape key
     document.addEventListener('keydown', function (event) {
-      if (event.key === "Escape") {
-        modal.style.display = "none";
+      if (event.key === 'Escape') {
+        modal.style.display = 'none';
       }
     });
 
     // Get the next and previous buttons
-    var next = document.getElementsByClassName("next")[0];
-    var prev = document.getElementsByClassName("prev")[0];
+    var next = document.getElementsByClassName('next')[0];
+    var prev = document.getElementsByClassName('prev')[0];
 
     // When the user clicks on next button
     next.onclick = function () {
-      var carouselImages = document.getElementsByClassName("flyer-image");
+      var carouselImages = document.getElementsByClassName('flyer-image');
       currentIndex = (currentIndex + 1) % carouselImages.length;
       showImage(currentIndex);
     };
 
     // When the user clicks on previous button
     prev.onclick = function () {
-      var carouselImages = document.getElementsByClassName("flyer-image");
-      currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
+      var carouselImages = document.getElementsByClassName('flyer-image');
+      currentIndex =
+        (currentIndex - 1 + carouselImages.length) % carouselImages.length;
       showImage(currentIndex);
     };
   }
@@ -225,5 +226,3 @@ document.addEventListener('DOMContentLoaded', function () {
     nextButton.style.display = 'none';
   }
 });
-
-
