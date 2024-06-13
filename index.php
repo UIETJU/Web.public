@@ -88,7 +88,7 @@ try {
         </div>
     </section>
 
-    <div class="chatbox">
+    <!-- <div class="chatbox">
         <div class="chatbox--bar">
             <span>UIEboT</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -107,7 +107,7 @@ try {
     </div>
     <div class="chatbot-btn">
         <img src="assets/png/UieBot.png" alt="UIEBOT">
-    </div>
+    </div> -->
     <?php
     $sql = "SELECT flyerURL FROM Modal";
     $result = $conn->query($sql);
