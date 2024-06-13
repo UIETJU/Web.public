@@ -60,9 +60,9 @@ if (
     document.getElementById('quote').innerHTML = quotes[num];
   }
 
-  setTimeout(() => {
+  setInterval(() => {
     newQuote();
-  }, 800);
+  }, 2500);
 }
 //This Code snippet detects whether the screen is touch enabled or not.
 //It is being used to apply different stylings for more responsive UX.
