@@ -71,7 +71,7 @@ textarea {
   display: none;
 }
 
-/* General Styles */
+/* Gallery Styles */
 .carousel-container {
   position: relative;
   max-width: 100%;
@@ -89,30 +89,28 @@ textarea {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
   align-items: center;
   padding: 5px;
 }
 
 .gallery-container {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  justify-content: normal;
+  justify-content: space-between;
   background-color: #faebd7;
   margin-top: 1rem;
   box-shadow: 0 20px 24px rgba(0, 0, 0, 0.12);
   padding: 5px;
   height: 70vh;
-  /* Set height to 100vh to occupy full viewport height */
   box-sizing: border-box;
 }
 
 .gallery-image-container {
   max-height: 70vh;
   height: auto;
-  max-width: 70%;
+  max-width: 60%;
   width: 60%;
   object-fit: contain;
   flex-shrink: 0;
@@ -127,10 +125,11 @@ textarea {
 .gallery-description {
   display: flex;
   flex-direction: column;
-  justify-items: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 2rem;
   gap: 1rem;
+  max-width: 40%;
 }
 
 .gallery-desc-title {
@@ -143,7 +142,6 @@ textarea {
 }
 
 .gallery-desc-text {
-  display: inline;
   font-size: 2rem;
   color: #5f3411 !important;
   font-weight: 400;
@@ -152,15 +150,15 @@ textarea {
 
 .gallery-btn {
   display: inline-block;
-  border: 5px thin;
-  font-size: 20px;
-  border-radius: 10px;
-  padding: 0 2rem 2rem 0rem;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
 
 .gallery-btn-holder {
   display: flex;
   gap: 1rem;
+  justify-content: flex-end;
 }
 
 .carousel-button {
@@ -219,37 +217,28 @@ textarea {
 /* Mobile Screens */
 @media (max-width: 600px) {
   .gallery-container {
-    gap: 0.5rem;
     flex-direction: column;
-    justify-items: start;
-    align-items: start;
-    gap: 1rem;
-    height: 85vh;
-    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
   }
 
   .gallery-image-container {
-    max-width: 600px;
-    max-height: 75%;
-    height: 70%;
+    max-width: 100%;
+    max-height: 50vh;
     width: 100%;
-
-  }
-
-  .gallery-image-container img {
-    width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   .gallery-description {
-    padding: 10px 10px;
-    text-align: left;
-    /* Ensure the description takes the remaining viewport height */
+    max-width: 100%;
+    padding: 1rem;
+    text-align: center;
   }
 
   .gallery-desc-title {
     font-size: 1.5rem;
-    padding: 0rem;
   }
 
   .gallery-desc-text {
@@ -257,16 +246,52 @@ textarea {
   }
 
   .gallery-btn-holder {
-    display: flexbox;
-    justify-content: end;
-    margin: -2rem 0.5rem;
-
+    justify-content: center;
   }
 
   .gallery-btn {
-    border: 2px thin;
     font-size: 15px;
-    padding: 2px;
+    padding: 10px 15px;
+  }
+}
+
+/* Mobile Screens Landscape */
+@media (max-width: 600px) and (orientation: landscape) {
+  .gallery-container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 1rem;
+  }
+
+  .gallery-image-container {
+    max-width: 60%;
+    max-height: 100%;
+    width: 60%;
+    height: auto;
+  }
+
+  .gallery-description {
+    max-width: 40%;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .gallery-desc-title {
+    font-size: 1.5rem;
+  }
+
+  .gallery-desc-text {
+    font-size: 1rem;
+  }
+
+  .gallery-btn-holder {
+    justify-content: flex-end;
+  }
+
+  .gallery-btn {
+    font-size: 15px;
+    padding: 10px 15px;
   }
 }
 
