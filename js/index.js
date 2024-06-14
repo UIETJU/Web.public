@@ -38,32 +38,6 @@ headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.php';
 });
 
-// Quote Generator
-//Add new Quotes to the array.
-var quotes = [
-  '"कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ।।"',
-  '"यस्य कृत्यं न जानन्ति मन्त्रं वा मन्त्रितं परे । कृतमेवास्य जानन्ति स वै पण्डित उच्यते ॥"',
-  '"बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते । तस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम् ॥"',
-  '"यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः । इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥"',
-  '"विद्वत्त्वं दक्षता शीलं सङ्कान्तिरनुशीलनम् । शिक्षकस्य गुणाः सप्त सचेतस्त्वं प्रसन्नता ॥"',
-  '"विद्यां चाविद्यां च यस्तद्वेदोभ्य सह । अविद्यया मृत्युं तीर्त्वाऽमृतमश्नुते ॥"',
-];
-
-// without if statement this script would run on all pages causing errors in console. This script will check if the page is homepage or not and if it is
-// homepage then the quote will show!
-if (
-  window.location.href.includes('index.php') ||
-  !window.location.href.includes('.php')
-) {
-  function newQuote() {
-    var num = Math.floor(Math.random() * quotes.length);
-    document.getElementById('quote').innerHTML = quotes[num];
-  }
-
-  setInterval(() => {
-    newQuote();
-  }, 2500);
-}
 //This Code snippet detects whether the screen is touch enabled or not.
 //It is being used to apply different stylings for more responsive UX.
 //It adds a classes touch/no-touch to the bidy dynamically.
