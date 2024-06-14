@@ -1,5 +1,5 @@
 <?php
-require '<div class=""></div>./../DB/db-connect.php';
+require '../../DB/db-connect.php';
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 try {
