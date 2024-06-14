@@ -152,7 +152,7 @@ textarea {
   display: inline-block;
   font-size: 18px;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 15px;
 }
 
 .gallery-btn-holder {
@@ -234,12 +234,12 @@ textarea {
   .gallery-description {
     max-width: 100%;
     padding: 1rem;
-    text-align: center;
+    text-align: left;
   }
 
   .gallery-desc-title {
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
   }
 
   .gallery-desc-text {
@@ -247,7 +247,7 @@ textarea {
   }
 
   .gallery-btn-holder {
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .gallery-btn {
@@ -257,10 +257,8 @@ textarea {
 }
 
 
-/* Mobile Screens Landscape */
-@media (max-width: 600px) and (orientation: landscape) {
+@media (min-width: 600px) and (max-width: 1024px) {
   .gallery-container {
-    gap: 0.5rem;
     flex-direction: column;
     align-items: center;
     height: 80vh;
@@ -277,27 +275,28 @@ textarea {
   .gallery-description {
     max-width: 100%;
     padding: 1rem 10px;
-    text-align: center;
+    text-align: left; 
   }
 
   .gallery-desc-title {
-    font-size: 1.5rem;
+    font-size: 2rem; 
     padding: 0rem;
   }
 
   .gallery-desc-text {
-    font-size: 1rem;
+    font-size: 1.2rem; 
   }
 
   .gallery-btn-holder {
-    justify-content: center;
-    margin: 0.5rem 0.5rem;
+    justify-content: flex-end; 
+    margin: 1rem 0.5rem;
+    width: 100%; 
   }
 
   .gallery-btn {
-    border: 2px thin;
-    font-size: 15px;
-    padding: 2px;
+    border: 3px thin;
+    font-size: 17px;
+    padding: 5px;
   }
 }
 
