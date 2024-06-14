@@ -216,33 +216,6 @@ textarea {
   justify-content: center;
 }
 
-/* Tablet and Small Screens */
-@media (max-width: 780px) {
-  .carousel-button {
-    display: none;
-  }
-
-  .gallery-desc-title {
-    font-size: 2rem;
-  }
-
-  .gallery-desc-text {
-    font-size: 1.5rem;
-  }
-
-  .gallery-image-container {
-    max-width: 60%;
-    width: 60%;
-    max-height: 70vh;
-    height: auto;
-  }
-
-  .gallery-image-container img {
-    max-height: 100%;
-    max-width: 100%;
-  }
-}
-
 /* Mobile Screens */
 @media (max-width: 600px) {
   .gallery-container {
