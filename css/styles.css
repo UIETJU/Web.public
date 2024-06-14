@@ -218,7 +218,6 @@ textarea {
 @media (max-width: 600px) {
   .gallery-container {
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     height: auto;
     padding: 1rem;
@@ -252,7 +251,7 @@ textarea {
 
   .gallery-btn {
     font-size: 15px;
-    padding: 5px 10px;
+    padding: 5px 5px;
   }
 }
 
