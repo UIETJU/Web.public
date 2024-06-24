@@ -52,11 +52,10 @@
             </h3>
             <p class="projects__row-content-desc left-text">
               UIET, Kathua is a constituent institution of the University of
-              Jammu. It is the only Engineerning college under the University
-              offering Bachelor of Technology course in Computer Science and
-              Engineering (CSE) with intake of 60 seats.
+              Jammu, offering Bachelor of Technology course in Computer Science and
+              Engineering (CSE) with intake of 60 seats (regular) and 6 seats (lateral). The department is currently headed by Er. Archana Salaria.
             </p>
-            <a href="./documents/CSE_syllabus_2018.pdf" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Download Syllabus</a>
+            <a href="https://drive.google.com/drive/folders/1GjbO1ejk2FsUiI4lCgFqeYxqkrhFta7_?usp=sharing" class="btn btn--med btn--theme dynamicBgClr fa-regular fa-file" target="_blank">Syllabus</a>
           </div>
         </div>
 
@@ -69,11 +68,11 @@
               <h3 class="projects__row-content-title">Civil Engineering</h3>
               <p class="projects__row-content-desc left-text">
                 UIET, Kathua is a constituent institution of the University of
-                Jammu. It is the only Engineerning college under the
-                University offering Bachelor of Technology course in Civil
-                Engineering (CE) with an intake of 60 seats.
+                Jammu, offering Bachelor of Technology course in Civil
+                Engineering (CE) with an intake of 60 seats (regular) and 6 seats (lateral). 
+                The department is headed by Er. Sandeep Raj.
               </p>
-              <a href="./documents/CIVIL_syllabus.pdf" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Download Syllabus</a>
+              <a href="https://drive.google.com/drive/folders/1ajVV8_1BfYWQtwLm-Kd6nyj8rTpSb6_e?usp=sharing" class="btn btn--med btn--theme dynamicBgClr fa-regular fa-file" target="_blank">Syllabus</a>
             </div>
           </div>
         </div>
@@ -83,5 +82,4 @@
   <?php require_once "components/footer.php" ?>
   <script src="./js/index.js"></script>
 </body>
-
 </html>
