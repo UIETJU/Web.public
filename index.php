@@ -62,22 +62,21 @@ try {
         return $url; // Return the original URL if it doesn't match the expected pattern
     }
 
-    $sql = "SELECT institution_name, quote, bgimage_url FROM Home ORDER BY RAND() LIMIT 1";
+    $sql = "SELECT institution_name, quote, bgimage FROM Home ORDER BY RAND() LIMIT 1";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         $institutionName = !empty($row["institution_name"]) ? $row["institution_name"] : "University Institute of Engineering and Technology, Kathua";
         $quote = !empty($row["quote"]) ? $row["quote"] : "विद्यया अमृतमश्नुते";
-        $bgimage_url = !empty($row["bgimage_url"]) ? convertGoogleDriveLink($row["bgimage_url"]) : 'https://lh3.googleusercontent.com/d/12XY6FdoE1yPe-s2RM4wHoIhQ_fN9qUCR';
+        $bgimage_url = !empty($row["bgimage"]) ? convertGoogleDriveLink($row["bgimage"]) : 'https://lh3.googleusercontent.com/d/12XY6FdoE1yPe-s2RM4wHoIhQ_fN9qUCR';
     } else {
         $institutionName = "University Institute of Engineering and Technology, Kathua";
         $quote = "विद्यया अमृतमश्नुते";
-        $backgroundImageURL = 'https://lh3.googleusercontent.com/d/12XY6FdoE1yPe-s2RM4wHoIhQ_fN9qUCR';
+        $bgimage_url = 'https://lh3.googleusercontent.com/d/12XY6FdoE1yPe-s2RM4wHoIhQ_fN9qUCR';
     }
     ?>
     <section class="home-hero" id="home" style="background-image: url('<?php echo htmlspecialchars($bgimage_url); ?>');">
-
         <div class="home-hero__content">
             <h1 class="heading-primary">
                 <ul>
