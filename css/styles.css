@@ -935,13 +935,14 @@ table a:hover {
 .hidden {
   display: none;
 }
-
-.flip-quote,.flip-meaning {
-  display: inline-block;
-  backface-visibility: hidden;
+#quote-meaning{
   font-size:1.5rem;
   font-style: italic;
   color:#ff9901 ;
+}
+.flip-quote,.flip-meaning {
+  display: inline-block;
+  backface-visibility: hidden;
   transition: opacity 0.6s;
   position: absolute;
 }
@@ -966,7 +967,7 @@ table a:hover {
     font-size: 1.5rem;
   }
 
-  .quote-meaning {
+  #quote-meaning {
     font-size: 0.8rem
 
   }
@@ -980,7 +981,7 @@ table a:hover {
   #quote {
     font-size: 2rem;
   }
-  .quote-meaning {
+  #quote-meaning {
     font-size: 1rem
 
   }
@@ -994,7 +995,7 @@ table a:hover {
   #quote {
     font-size: 3rem;
   }
-  .quote-meaning {
+  #quote-meaning {
     font-size: 1.5rem
 
   }
