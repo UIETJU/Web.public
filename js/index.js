@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Flip the quote to its meaning after a delay (e.g., 5 seconds)
-    setTimeout(toggleFlip, 5000); // 5000ms = 5 seconds
+    setTimeout(toggleFlip, 2400); // 5000ms = 5 seconds
 
     // Flip the quote to its meaning and back when the quote or meaning is clicked
     quoteElement.addEventListener("click", toggleFlip);
