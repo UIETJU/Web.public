@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Flip the quote to its meaning after a delay (e.g., 5 seconds)
-    setTimeout(flipToMeaning, 5000); // 5000ms = 5 seconds
+    setTimeout(flipToMeaning, 7000); // 7000ms = 7 seconds
 
     // Flip the quote to its meaning when the quote is clicked
     quoteElement.addEventListener("click", flipToMeaning);
