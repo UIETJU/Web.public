@@ -40,7 +40,7 @@ headerLogoConatiner.addEventListener('click', () => {
 
 //This Code snippet detects whether the screen is touch enabled or not.
 //It is being used to apply different stylings for more responsive UX.
-//It adds a classes touch/no-touch to the bidy dynamically.
+//It adds classes touch/no-touch to the bidy dynamically.
 
 document.addEventListener('DOMContentLoaded', function () {
   if ('ontouchstart' in window || navigator.maxTouchPoints) {
