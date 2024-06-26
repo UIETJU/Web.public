@@ -55,7 +55,8 @@
               Jammu, offering Bachelor of Technology course in Computer Science and
               Engineering (CSE) with intake of 60 seats (regular) and 6 seats (lateral). The department is currently headed by Er. Archana Salaria.
             </p>
-            <a href="https://drive.google.com/drive/folders/1GjbO1ejk2FsUiI4lCgFqeYxqkrhFta7_?usp=sharing" class="btn btn--med btn--theme dynamicBgClr fa-regular fa-file" target="_blank">Syllabus</a>
+            <a href="https://drive.google.com/drive/folders/1GjbO1ejk2FsUiI4lCgFqeYxqkrhFta7_?usp=sharing" class="btn fa-regular fa-file btn--med btn--theme dynamicBgClr" target="_blank">Syllabus</a>
+            <a href="https://drive.google.com/drive/folders/1zR0kiL2ghS9Yjv6aO_kpw-N00zAkp1R5Pcf7suHlEsS-ARYau_Rby0BGpUZg9WJ6Sr9pn9co?usp=sharing" class="btn fa-regular fa-file btn--med btn--theme dynamicBgClr fa-regular fa-file" target="_blank">Previous Year Papers</a>
           </div>
         </div>
 
@@ -72,7 +73,8 @@
                 Engineering (CE) with an intake of 60 seats (regular) and 6 seats (lateral). 
                 The department is headed by Er. Sandeep Raj.
               </p>
-              <a href="https://drive.google.com/drive/folders/1ajVV8_1BfYWQtwLm-Kd6nyj8rTpSb6_e?usp=sharing" class="btn btn--med btn--theme dynamicBgClr fa-regular fa-file" target="_blank">Syllabus</a>
+              <a href="https://drive.google.com/drive/folders/1ajVV8_1BfYWQtwLm-Kd6nyj8rTpSb6_e?usp=sharing" class="btn fa-regular fa-file btn--med btn--theme dynamicBgClr " target="_blank">Syllabus</a>
+              <a href="https://drive.google.com/drive/folders/1zR0kiL2ghS9Yjv6aO_kpw-N00zAkp1R5Pcf7suHlEsS-ARYau_Rby0BGpUZg9WJ6Sr9pn9co?usp=sharing" class="btn fa-regular fa-file btn--med btn--theme dynamicBgClr fa-regular fa-file" target="_blank">Previous Year Papers</a>
             </div>
           </div>
         </div>

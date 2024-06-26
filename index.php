@@ -35,7 +35,7 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="University Institute of Engineering & Technology (UIET) Kathua, is a constituent Engineering College of University of Jammu, J&K, India.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home- Jammu University's Institute of Engineering and Technology, Kathua</title>
+    <title>Home- University Institute of Engineering and Technology, Kathua</title>
     <link rel="icon" href="./assets/png/uiet_header.png">
     <link rel="stylesheet" href="css/styles.css?t=<?php echo time(); ?>">
     <link rel="stylesheet" href="./css/chatbot.css?t=<?php echo time(); ?>">
@@ -69,11 +69,11 @@ try {
         $row = $result->fetch_assoc();
         $institutionName = !empty($row["institution_name"]) ? $row["institution_name"] : "University Institute of Engineering and Technology, Kathua";
         $quote = !empty($row["quote"]) ? $row["quote"] : "विद्यया अमृतमश्नुते";
-        $bgimage_url = !empty($row["bgimage_url"]) ? convertGoogleDriveLink($row["bgimage_url"]) : 'https://lh3.googleusercontent.com/d/1J2_d3DFUHvmEOU-emA8-CKSYHwAgeKBD';
+        $bgimage_url = !empty($row["bgimage_url"]) ? convertGoogleDriveLink($row["bgimage_url"]) : 'https://lh3.googleusercontent.com/d/12XY6FdoE1yPe-s2RM4wHoIhQ_fN9qUCR';
     } else {
         $institutionName = "University Institute of Engineering and Technology, Kathua";
         $quote = "विद्यया अमृतमश्नुते";
-        $backgroundImageURL = 'https://lh3.googleusercontent.com/d/1J2_d3DFUHvmEOU-emA8-CKSYHwAgeKBD';
+        $backgroundImageURL = 'https://lh3.googleusercontent.com/d/12XY6FdoE1yPe-s2RM4wHoIhQ_fN9qUCR';
     }
     ?>
     <section class="home-hero" id="home" style="background-image: url('<?php echo htmlspecialchars($bgimage_url); ?>');">
