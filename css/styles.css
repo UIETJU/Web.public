@@ -932,6 +932,24 @@ table a:hover {
   /* Optional: Add a filter to darken the background for better text visibility */
   border-radius: 10px;
 }
+.hidden {
+  display: none;
+}
+
+.quote-meaning {
+  display: inline-block;
+  backface-visibility: hidden;
+  font-size:1.5rem;
+  font-style: italic;
+  transform: rotateY(180deg);
+  transition: transform 0.6s;
+}
+
+.flip {
+  display: inline-block;
+  transform: rotateY(0deg);
+  transition: transform 0.6s;
+}
 
 @media (max-width: 600px) {
   .home-hero {
@@ -946,6 +964,11 @@ table a:hover {
   #quote {
     font-size: 1.5rem;
   }
+
+  .quote-meaning {
+    font-size: 0.8rem
+
+  }
 }
 
 @media (min-width: 768) {
@@ -956,6 +979,10 @@ table a:hover {
   #quote {
     font-size: 2rem;
   }
+  .quote-meaning {
+    font-size: 1rem
+
+  }
 }
 
 @media (min-width: 1024px) {
@@ -965,6 +992,10 @@ table a:hover {
 
   #quote {
     font-size: 3rem;
+  }
+  .quote-meaning {
+    font-size: 1.5rem
+
   }
 }
 

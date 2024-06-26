@@ -200,3 +200,25 @@ document.addEventListener('DOMContentLoaded', function () {
     nextButton.style.display = 'none';
   }
 });
+
+ //Quote Meaning Flip//
+
+document.addEventListener("DOMContentLoaded", function() {
+    var quoteElement = document.getElementById("quote");
+    var meaningElement = document.getElementById("quote-meaning");
+
+    // Set the meaning of the quote
+    meaningElement.textContent = "This is the meaning of the quote.";
+
+    // Show the meaning after a delay (e.g., 5 seconds)
+    setTimeout(function() {
+        meaningElement.classList.remove("hidden");
+        meaningElement.classList.add("flip");
+    }, 5000); // 5000ms = 5 seconds
+
+    // Show the meaning when the quote is clicked
+    quoteElement.addEventListener("click", function() {
+        meaningElement.classList.toggle("hidden");
+        meaningElement.classList.toggle("flip");
+    });
+});
