@@ -206,19 +206,29 @@ document.addEventListener("DOMContentLoaded", function() {
     var quoteElement = document.getElementById("quote");
     var meaningElement = document.getElementById("quote-meaning");
 
-    // Function to flip the quote to its meaning
-    function flipToMeaning() {
-        quoteElement.classList.add("flipped");
-        setTimeout(function() {
-            quoteElement.classList.add("hidden");
-            meaningElement.classList.remove("hidden");
-            meaningElement.classList.add("visible");
-        }, 600); // Match the transition time for a smooth flip
+    // Function to flip the quote to its meaning and back
+    function toggleFlip() {
+        if (quoteElement.classList.contains("hidden")) {
+            meaningElement.classList.add("flipped");
+            setTimeout(function() {
+                meaningElement.classList.add("hidden");
+                quoteElement.classList.remove("hidden");
+                quoteElement.classList.add("visible");
+            }, 600); // Match the transition time for a smooth flip
+        } else {
+            quoteElement.classList.add("flipped");
+            setTimeout(function() {
+                quoteElement.classList.add("hidden");
+                meaningElement.classList.remove("hidden");
+                meaningElement.classList.add("visible");
+            }, 600); // Match the transition time for a smooth flip
+        }
     }
 
     // Flip the quote to its meaning after a delay (e.g., 5 seconds)
-    setTimeout(flipToMeaning, 7000); // 7000ms = 7 seconds
+    setTimeout(toggleFlip, 5000); // 5000ms = 5 seconds
 
-    // Flip the quote to its meaning when the quote is clicked
-    quoteElement.addEventListener("click", flipToMeaning);
+    // Flip the quote to its meaning and back when the quote or meaning is clicked
+    quoteElement.addEventListener("click", toggleFlip);
+    meaningElement.addEventListener("click", toggleFlip);
 });

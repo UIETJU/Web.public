@@ -84,7 +84,7 @@ try {
             <ul>
                 <li><?php echo htmlspecialchars($institutionName); ?></li>
                 <li id="quote" class="flip-quote"><?php echo htmlspecialchars($quote); ?></li>
-                <li id="quote-meaning" class="hidden"><?php echo htmlspecialchars($quoteMeaning); ?></li>
+                <li id="quote-meaning" class="hidden flip-meaning"><?php echo htmlspecialchars($quoteMeaning); ?></li>
             </ul>
         </h1>
     </div>
