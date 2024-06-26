@@ -61,54 +61,35 @@ try {
 
         return $url; // Return the original URL if it doesn't match the expected pattern
     }
-$sql = "SELECT institution_name, quote, quote_meaning, bgimage FROM Home ORDER BY RAND() LIMIT 1";
-$result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-    $row = $result->fetch_assoc();
-    $institutionName = !empty($row["institution_name"]) ? $row["institution_name"] : "University Institute of Engineering and Technology, Kathua";
-    $quote = !empty($row["quote"]) ? $row["quote"] : "विद्यया अमृतमश्नुते";
-    $quoteMeaning = !empty($row["quote_meaning"]) ? $row["quote_meaning"] : "By knowledge, one attains immortality.";
-    $bgimage_url = !empty($row["bgimage"]) ? convertGoogleDriveLink($row["bgimage"]) : 'https://lh3.googleusercontent.com/d/12XY6FdoE1yPe-s2RM4wHoIhQ_fN9qUCR';
-} else {
-    $institutionName = "University Institute of Engineering and Technology, Kathua";
-    $quote = "विद्यया अमृतमश्नुते";
-    $quoteMeaning = "By knowledge, one attains immortality.";
-    $bgimage_url = 'https://lh3.googleusercontent.com/d/12XY6FdoE1yPe-s2RM4wHoIhQ_fN9qUCR';
-}
-?>
-<section class="home-hero" id="home" style="background-image: url('<?php echo htmlspecialchars($bgimage_url); ?>');">
+    $sql = "SELECT institution_name, quote, quote_meaning, bgimage FROM Home ORDER BY RAND() LIMIT 1";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $institutionName = !empty($row["institution_name"]) ? $row["institution_name"] : "University Institute of Engineering and Technology, Kathua";
+        $quote = !empty($row["quote"]) ? $row["quote"] : "विद्यया अमृतमश्नुते";
+        $quoteMeaning = !empty($row["quote_meaning"]) ? $row["quote_meaning"] : "By knowledge, one attains immortality.";
+        $bgimage_url = !empty($row["bgimage"]) ? convertGoogleDriveLink($row["bgimage"]) : 'https://lh3.googleusercontent.com/d/17bKM5cvEkkFsebaHJdIp7mEWIO5pO-PP';
+    } else {
+        $institutionName = "University Institute of Engineering and Technology, Kathua";
+        $quote = "विद्यया अमृतमश्नुते";
+        $quoteMeaning = "By knowledge, one attains immortality.";
+        $bgimage_url = 'https://lh3.googleusercontent.com/d/17bKM5cvEkkFsebaHJdIp7mEWIO5pO-PP';
+    }
+    ?>
+   <section class="home-hero" id="home" style="background-image: url('<?php echo htmlspecialchars($bgimage_url); ?>');">
     <div class="home-hero__content">
         <h1 class="heading-primary">
             <ul>
                 <li><?php echo htmlspecialchars($institutionName); ?></li>
-                <li id="quote"><?php echo htmlspecialchars($quote); ?></li>
-                <li id="quote-meaning" class="quote-meaning hidden"><?php echo htmlspecialchars($quoteMeaning); ?></li>
+                <li id="quote" class="flip-quote"><?php echo htmlspecialchars($quote); ?></li>
+                <li id="quote-meaning" class="hidden"><?php echo htmlspecialchars($quoteMeaning); ?></li>
             </ul>
         </h1>
     </div>
 </section>
-
-    <!-- <div class="chatbox">
-        <div class="chatbox--bar">
-            <span>UIEboT</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
-            </svg>
-        </div>
-        <div class="chatarea"></div>
-        <div class="chatbox--compose">
-            <input type="text" placeholder="Ask something...">
-            <div class="send-box">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                    <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
-                </svg>
-            </div>
-        </div>
-    </div>
-    <div class="chatbot-btn">
-        <img src="assets/png/UieBot.png" alt="UIEBOT">
-    </div> -->
+    <!-- Modal Notifcation Code -->
     <?php
     $sql = "SELECT flyerURL FROM Modal";
     $result = $conn->query($sql);

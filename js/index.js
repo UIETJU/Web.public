@@ -202,23 +202,23 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
  //Quote Meaning Flip//
-
 document.addEventListener("DOMContentLoaded", function() {
     var quoteElement = document.getElementById("quote");
     var meaningElement = document.getElementById("quote-meaning");
 
-    // Set the meaning of the quote
-    meaningElement.textContent = "This is the meaning of the quote.";
+    // Function to flip the quote to its meaning
+    function flipToMeaning() {
+        quoteElement.classList.add("flipped");
+        setTimeout(function() {
+            quoteElement.classList.add("hidden");
+            meaningElement.classList.remove("hidden");
+            meaningElement.classList.add("visible");
+        }, 600); // Match the transition time for a smooth flip
+    }
 
-    // Show the meaning after a delay (e.g., 5 seconds)
-    setTimeout(function() {
-        meaningElement.classList.remove("hidden");
-        meaningElement.classList.add("flip");
-    }, 5000); // 5000ms = 5 seconds
+    // Flip the quote to its meaning after a delay (e.g., 5 seconds)
+    setTimeout(flipToMeaning, 5000); // 5000ms = 5 seconds
 
-    // Show the meaning when the quote is clicked
-    quoteElement.addEventListener("click", function() {
-        meaningElement.classList.toggle("hidden");
-        meaningElement.classList.toggle("flip");
-    });
+    // Flip the quote to its meaning when the quote is clicked
+    quoteElement.addEventListener("click", flipToMeaning);
 });

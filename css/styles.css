@@ -928,7 +928,7 @@ table a:hover {
 #quote {
   font-size: 2.5rem;
   color: #ffc401;
-  background: rgb(121, 120, 120);
+  background: rgba(245, 244, 244, 0.329);
   /* Optional: Add a filter to darken the background for better text visibility */
   border-radius: 10px;
 }
@@ -936,21 +936,22 @@ table a:hover {
   display: none;
 }
 
-.quote-meaning {
+.flip-quote,.flip-meaning {
   display: inline-block;
   backface-visibility: hidden;
   font-size:1.5rem;
   font-style: italic;
-  transform: rotateY(180deg);
-  transition: transform 0.6s;
+  color:#ff9901 ;
+  transition: opacity 0.6s;
+  position: absolute;
 }
 
-.flip {
-  display: inline-block;
-  transform: rotateY(0deg);
-  transition: transform 0.6s;
+.flipped {
+  opacity: 0;
 }
-
+.visible{
+  opacity: 1;
+}
 @media (max-width: 600px) {
   .home-hero {
     background-attachment: scroll;
