@@ -936,6 +936,7 @@ table a:hover {
 @media (max-width: 600px) {
   .home-hero {
     background-attachment: scroll;
+    background-size: contain; 
   }
 
   .heading-primary li {
