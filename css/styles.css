@@ -1700,12 +1700,14 @@ table a:hover {
 }
 
 .header__link--main {
-  color: #fff;
+  color: #c4c4c4;
+  border-radius: 10px;
+  border-color: #dadada62;
 }
 
 .header__link:hover,
 .header__link--main:hover {
-  color: #4155f2 !important;
+  color: #fca93d !important;
 }
 
 @media only screen and (max-width: 56.25em) {
