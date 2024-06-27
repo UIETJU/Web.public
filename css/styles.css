@@ -226,6 +226,10 @@ textarea {
     /* padding: 1rem; */
   }
 
+  .carousel-pause-play {
+    top: 0;
+  }
+
   .gallery-image-container {
     max-width: 100%;
     max-height: 50vh;
