@@ -79,7 +79,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         $bgimage_url = 'https://lh3.googleusercontent.com/d/17bKM5cvEkkFsebaHJdIp7mEWIO5pO-PP';
     }
     ?>
-    <section class="home-hero" id="home" url('<?php echo htmlspecialchars($bgimage_url); ?>');">
+    <section class="home-hero" id="home" style="background-image: url('<?php echo htmlspecialchars($bgimage_url); ?>');">
         <div class="home-hero__content">
             <h1 class="heading-primary">
                 <ul>
