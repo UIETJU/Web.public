@@ -143,7 +143,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         </div>
     </section>
     <!-- Gallery Starts -->
-    <section id="gallery" class="projects sec-pad-odd">
+    <section id="gallery" class="projects sec-pad-odd spacer">
         <?php
         $sql = "SELECT image, description, title, NoteURL, AlbumURL FROM Gallery";
         $result = $conn->query($sql);
