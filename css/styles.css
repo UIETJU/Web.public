@@ -1730,19 +1730,19 @@ table a:hover {
   margin: auto;
   top: 6rem;
   left: 1rem;
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
   padding: 1rem;
 }
 
 .submenu a {
   display: block;
-  color: #333;
+  color: #313131;
   text-decoration: none;
   padding: 1rem;
 }
 
 .submenu a:hover {
-  background-color: #f0f0f0;
+  background-color: #fffcfc;
 }
 
 .header__main-ham-menu-cont {
