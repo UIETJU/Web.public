@@ -844,6 +844,11 @@ table a:hover {
   padding: 5px;
 }
 
+.spacer {
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
 .sec-pad-odd {
   padding: 5px;
   background-color: #ffffff;

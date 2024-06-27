@@ -213,7 +213,7 @@ try {
         </div>
     </section>
     <!-- Notifcation Window -->
-    <section id="Notify" class="projects sec-pad-even">
+    <section id="Notify" class="projects sec-pad-even spacer">
         <div class="notifications-wrapper">
             <div class="notifications-container">
                 <?php
@@ -266,7 +266,7 @@ try {
     </div>
     </section>
 
-    <section id="admission" class="projects sec-pad-even">
+    <section id="admission" class="projects sec-pad-even spacer">
         <div class="main-container">
             <h2 class="heading heading-sec heading-sec__mb-bg">
                 <span class="heading-sec__main">Admission</span>
