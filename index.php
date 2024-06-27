@@ -237,7 +237,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
                     }
 
                     echo "</div>";
-                    echo "<button class='alt-btn btn fa-box-archive fa-sm'>Archive</button>";
+                    echo "<button class='alt-btn btn'>Archive</button>";
                     echo "</div>";
                 }
                 $conn->close();
