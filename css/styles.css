@@ -77,6 +77,7 @@ textarea {
   max-width: 100%;
   margin-bottom: 5px;
   overflow: hidden;
+  box-shadow: 0 20px 24px rgba(0, 0, 0, 0.12);
 }
 
 .carousel-slides {
@@ -90,7 +91,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
 }
 
 .gallery-container {
@@ -101,7 +101,6 @@ textarea {
   justify-content: space-between;
   background-color: #faebd7;
   margin-top: 1rem;
-  box-shadow: 0 20px 24px rgba(0, 0, 0, 0.12);
   padding: 5px;
   height: 70vh;
   box-sizing: border-box;
@@ -114,6 +113,7 @@ textarea {
   width: 60%;
   object-fit: contain;
   flex-shrink: 0;
+  flex: 1;
 }
 
 .gallery-image-container img {
@@ -221,8 +221,9 @@ textarea {
   .gallery-container {
     flex-direction: column;
     align-items: center;
-    height: auto;
-    padding: 1rem;
+    min-height: 72vh;
+    gap: 0.1rem;
+    /* padding: 1rem; */
   }
 
   .gallery-image-container {
