@@ -47,7 +47,7 @@
             <h3>University Notifications</h3>
             <p>Access University Council, Syndicate, Academic Council resolutions related to UIET here!</p>
         </div>
-        <a class="btn btn--theme-inv" target="_blank" href="https://drive.google.com/drive/folders/16kuN5ov-tGWuIai9hLKsyQdeBK1f8518">Docs here!</a>
+        <a class="btn btn--theme-inv" target="_blank" href="https://drive.google.com/drive/folders/1_F1YYG2qk_FIb5bPnMJUIsi-mElAB5_7">Docs here!</a>
     </div>
     <div class="document-row" id="right">
         <img src="assets/png/AICTE.png" alt="Image 2" class="image">
