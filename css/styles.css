@@ -1700,7 +1700,7 @@ table a:hover {
 }
 
 .header__link--main {
-  color: #c4c4c4;
+  color: hsl(0, 0%, 100%);
   border-radius: 10px;
   border-color: #dadada62;
 }
