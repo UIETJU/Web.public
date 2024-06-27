@@ -14,6 +14,7 @@ try {
     error_log($e->getMessage());  // Log the error message
     die("Database connection failed: " . $e->getMessage());
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +36,7 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="University Institute of Engineering & Technology (UIET) Kathua, is a constituent Engineering College of University of Jammu, J&K, India.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home- University Institute of Engineering and Technology, Kathua</title>
+    <title>Home - University Institute of Engineering and Technology, Kathua</title>
     <link rel="icon" href="./assets/png/uiet_header.png">
     <link rel="stylesheet" href="css/styles.css?t=<?php echo time(); ?>">
     <link rel="stylesheet" href="./css/chatbot.css?t=<?php echo time(); ?>">
@@ -64,7 +65,7 @@ try {
 
     $sql = "SELECT institution_name, quote, quote_meaning, bgimage FROM Home ORDER BY RAND() LIMIT 1";
     $result = $conn->query($sql);
-    
+
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         $institutionName = !empty($row["institution_name"]) ? $row["institution_name"] : "University Institute of Engineering and Technology, Kathua";
@@ -78,17 +79,17 @@ try {
         $bgimage_url = 'https://lh3.googleusercontent.com/d/17bKM5cvEkkFsebaHJdIp7mEWIO5pO-PP';
     }
     ?>
-   <section class="home-hero" id="home" style="background-image: url('<?php echo htmlspecialchars($bgimage_url); ?>');">
-    <div class="home-hero__content">
-        <h1 class="heading-primary">
-            <ul>
-                <li><?php echo htmlspecialchars($institutionName); ?></li>
-                <li id="quote" class="flip-quote"><?php echo htmlspecialchars($quote); ?></li>
-                <li id="quote-meaning" class="hidden flip-meaning"><?php echo htmlspecialchars($quoteMeaning); ?></li>
-            </ul>
-        </h1>
-    </div>
-</section>
+    <section class="home-hero" id="home" style="background-image: linear-gradient(rgba(0,0,0,0.325),rgba(0,0,0,0.325)), url('<?php echo htmlspecialchars($bgimage_url); ?>');">
+        <div class="home-hero__content">
+            <h1 class="heading-primary">
+                <ul>
+                    <li><?php echo htmlspecialchars($institutionName); ?></li>
+                    <li id="quote" class="flip-quote"><?php echo htmlspecialchars($quote); ?></li>
+                    <li id="quote-meaning" class="hidden flip-meaning"><?php echo htmlspecialchars($quoteMeaning); ?></li>
+                </ul>
+            </h1>
+        </div>
+    </section>
     <!-- Modal Notifcation Code -->
     <?php
     $sql = "SELECT flyerURL FROM Modal";

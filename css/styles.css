@@ -207,6 +207,8 @@ textarea {
   cursor: pointer;
   margin-right: 1rem;
   padding-left: 3px;
+  position: relative;
+  top: 7px;
 }
 
 .carousel-pause-play i {
@@ -255,7 +257,6 @@ textarea {
   }
 }
 
-
 @media (min-width: 600px) and (max-width: 1024px) {
   .gallery-container {
     flex-direction: column;
@@ -274,22 +275,22 @@ textarea {
   .gallery-description {
     max-width: 100%;
     padding: 1rem;
-    text-align: left; 
+    text-align: left;
   }
 
   .gallery-desc-title {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     padding: 0.5rem;
   }
 
   .gallery-desc-text {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
   }
 
   .gallery-btn-holder {
-    justify-content: flex-end; 
+    justify-content: flex-end;
     margin: 1rem 0.5rem;
-    width: 100%; 
+    width: 100%;
   }
 
   .gallery-btn {
@@ -559,7 +560,6 @@ table a:hover {
 }
 
 @media only screen and (max-width: 37.5em) {
-
   table th,
   td,
   tr {
@@ -701,6 +701,7 @@ table a:hover {
   letter-spacing: 3px;
   text-align: center;
   margin-bottom: 3rem;
+  margin-top: 3rem;
   position: relative;
 }
 
@@ -935,14 +936,15 @@ table a:hover {
 .hidden {
   display: none;
 }
-#quote-meaning{
-  font-size:2rem;
+#quote-meaning {
+  font-size: 2rem;
   font-style: italic;
-  color:#ff9901 ;
+  color: #ff9901;
   background: rgba(112, 112, 112, 0.7);
   border-radius: 15px;
 }
-.flip-quote,.flip-meaning {
+.flip-quote,
+.flip-meaning {
   display: inline-block;
   backface-visibility: hidden;
   transition: opacity 0.6s;
@@ -951,7 +953,7 @@ table a:hover {
 .flipped {
   opacity: 0;
 }
-.visible{
+.visible {
   opacity: 1;
 }
 @media (max-width: 600px) {
@@ -969,8 +971,7 @@ table a:hover {
   }
 
   #quote-meaning {
-    font-size: 1.5rem
-
+    font-size: 1.5rem;
   }
 }
 
@@ -983,8 +984,7 @@ table a:hover {
     font-size: 2.5rem;
   }
   #quote-meaning {
-    font-size: 1.8rem
-
+    font-size: 1.8rem;
   }
 }
 
@@ -997,8 +997,7 @@ table a:hover {
     font-size: 3rem;
   }
   #quote-meaning {
-    font-size: 2.5rem
-
+    font-size: 2.5rem;
   }
 }
 
@@ -1331,9 +1330,11 @@ table a:hover {
 /* Facilities */
 
 .contact {
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)),
+      rgba(0, 98, 185, 0.8)
+    ),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
@@ -1441,9 +1442,11 @@ table a:hover {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)),
+      rgba(0, 98, 185, 0.8)
+    ),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
@@ -1750,7 +1753,6 @@ table a:hover {
 
 .header__main-ham-menu-close {
   width: 100%;
-
 }
 
 .header__sm-menu {
