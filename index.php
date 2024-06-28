@@ -1,20 +1,5 @@
 <?php
 require '../../DB/db-connect.php';
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
-// try {
-//     $conn = mysqli_init();
-//     mysqli_options($conn, MYSQLI_OPT_CONNECT_TIMEOUT, 10); // Set timeout to 10 seconds
-//     mysqli_real_connect($conn, $server, $dbUserName, $dbUserPwd, $database);
-
-//     if (!$conn) {
-//         throw new mysqli_sql_exception("Connection failed: " . mysqli_connect_error());
-//     }
-// } catch (mysqli_sql_exception $e) {
-//     error_log($e->getMessage());  // Log the error message
-//     die("Database connection failed: " . $e->getMessage());
-// }
-
 ?>
 
 <!DOCTYPE html>
@@ -79,7 +64,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         $bgimage_url = 'https://lh3.googleusercontent.com/d/17bKM5cvEkkFsebaHJdIp7mEWIO5pO-PP';
     }
     ?>
-    <section class="home-hero" id="home" style="background-image: url('<?php echo htmlspecialchars($bgimage_url); ?>');">
+    <section class="home-hero" id="home" style="background-image: linear-gradient(rgba(0,0,0,0.225), rgba(0,0,0,0.225)), url('<?php echo htmlspecialchars($bgimage_url); ?>');">
         <div class="home-hero__content">
             <h1 class="heading-primary">
                 <ul>
