@@ -64,7 +64,7 @@ require '../../DB/db-connect.php';
         $bgimage_url = 'https://lh3.googleusercontent.com/d/17bKM5cvEkkFsebaHJdIp7mEWIO5pO-PP';
     }
     ?>
-    <section class="home-hero" id="home" style="background-image: linear-gradient(rgba(0,0,0,0.225), rgba(0,0,0,0.225)), url('<?php echo htmlspecialchars($bgimage_url); ?>');">
+    <section class="home-hero" id="home" style="background-image: url('<?php echo htmlspecialchars($bgimage_url); ?>');">
         <div class="home-hero__content">
             <h1 class="heading-primary">
                 <ul>
