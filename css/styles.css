@@ -1700,8 +1700,8 @@ table a:hover {
 }
 
 .header__link--main {
-  /* color: hsl(0, 0%, 100%);
-  background-color: rgba(112, 128, 144, 0.6); */
+  color: hsl(0, 0%, 100%);
+  background-color: rgba(112, 128, 144, 0.6);
   color: white;
 }
 
