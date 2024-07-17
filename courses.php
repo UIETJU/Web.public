@@ -55,7 +55,7 @@
           </p>
           <div class="projects__row-buttons">
             <a href="https://drive.google.com/drive/folders/1GjbO1ejk2FsUiI4lCgFqeYxqkrhFta7_?usp=sharing" class="alt-btn btn fa-solid fa-file" target="_blank"> Syllabus</a>
-            <a href="https://drive.google.com/drive/folders/1zR0kiL2ghS9Yjv6aO_kpw-N00zAkp1R5Pcf7suHlEsS-ARYau_Rby0BGpUZg9WJ6Sr9pn9co?usp=sharing" class="alt-btn btn fa-solid fa-file" target="_blank"> Previous Year Papers</a>
+            <a href="https://drive.google.com/drive/folders/1zR0kiL2ghS9Yjv6aO_kpw-N00zAkp1R5Pcf7suHlEsS-ARYau_Rby0BGpUZg9WJ6Sr9pn9co?usp=sharing" class="fa-solid fa-file alt-btn btn "> Previous Year Papers</a>
             <a href="tel:9149912146" class="alt-btn btn fa-solid fa-phone" target="_blank"> Department in-charge here!👩‍🏫</a>
           </div>
         </div>

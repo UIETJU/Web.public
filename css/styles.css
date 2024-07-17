@@ -815,7 +815,6 @@ table a:hover {
 .btn {
   background: #fff;
   color: #333;
-  text-transform: none;
   letter-spacing: 2px;
   display: inline-block;
   font-weight: 700;
@@ -1243,6 +1242,7 @@ table a:hover {
   width: fit-content;
   margin-bottom: 10px;
   text-align: center;
+  text-transform: none;
 }
 
 /* Facilities */
