@@ -35,7 +35,7 @@
   <div class="main-container">
     <h2 class="heading heading-sec heading-sec__mb-bg">
       <span class="heading-sec__main">Our Programs</span>
-      <span class="heading-sec__sub center-text">
+      <span class="heading-sec__sub">
       At the University Institute of Engineering and Technology (UIET) Kathua, we offer a diverse range of Bachelor of Technology (B.Tech) programs designed to equip students with the knowledge and skills necessary to excel in the ever-evolving field of engineering and technology. Our programs are tailored to meet the demands of the industry and foster a culture of innovation, creativity, and excellence.
       </span>
     </h2>
