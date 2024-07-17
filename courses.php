@@ -31,7 +31,7 @@
 
 <body>
   <?php require_once "components/navbar.php" ?>
-  <section class="projects sec-pad--top uiet--animated-grid" style="background-color: #fff">
+  <section class="projects sec-pad-even" style="background-color: #fff">
   <div class="main-container">
     <h2 class="heading heading-sec heading-sec__mb-bg">
       <span class="heading-sec__main">Courses and Syllabus</span>
@@ -50,7 +50,7 @@
           <h3 class="projects__row-content-title">
             Computer Science and Engineering
           </h3>
-          <p class="projects__row-content-desc left-text">
+          <p class="projects__row-content-desc">
             UIET, Kathua is a constituent institution of the University of
             Jammu, offering Bachelor of Technology course in Computer Science and
             Engineering (CSE) with intake of 60 seats (regular) and 6 seats (lateral).
@@ -69,7 +69,7 @@
         </div>
         <div class="projects__row-content">
           <h3 class="projects__row-content-title">Civil Engineering</h3>
-          <p class="projects__row-content-desc left-text">
+          <p class="projects__row-content-desc">
             UIET, Kathua is a constituent institution of the University of
             Jammu, offering Bachelor of Technology course in Civil
             Engineering (CE) with an intake of 60 seats (regular) and 6 seats (lateral).
