@@ -670,8 +670,7 @@ table a:hover {
 }
 
 .right-text {
-  text-align: justify !important;
-  text-justify: auto;
+  text-align: right !important;
 }
 
 .blue-link {
@@ -838,6 +837,7 @@ table a:hover {
 .btn--med {
   padding: 1.5rem 5rem;
   font-size: 2rem;
+  text-transform: none;
 }
 
 .btn--theme {
@@ -1221,6 +1221,8 @@ table a:hover {
   max-width: 65rem;
   line-height: 1.5;
   margin-bottom: 3rem;
+  text-align:justify;
+  text-justify: auto;
 
 }
 
