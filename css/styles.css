@@ -207,8 +207,6 @@ textarea {
   cursor: pointer;
   margin-right: 1rem;
   padding-left: 3px;
-  position: relative;
-  top: 7px;
 }
 
 .carousel-pause-play i {

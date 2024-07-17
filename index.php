@@ -190,9 +190,9 @@ require '../../DB/db-connect.php';
                 <button class="carousel-button next ">&raquo;</button>
             </div>
             <div class="carousel-indicators">
-                <?php for ($i = 0; $i < count($slides); $i++) : ?>
+                //<?php for ($i = 0; $i < count($slides); $i++) : ?>
                     <button class="carousel-indicator" data-slide-to="<?php echo $i; ?>"></button>
-                <?php endfor; ?>
+                <?php endfor; ?>//
                 <button class="carousel-pause-play" aria-label="Pause/Play Button"><i class="fa-solid fa-pause"></i></button>
             </div>
         </div>
