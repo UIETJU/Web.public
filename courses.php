@@ -42,7 +42,7 @@
     </h2>
 
     <div class="projects__content ">
-      <div class="projects__row sec-pad-even">
+      <div class="projects__row">
         <div class="projects__row-img-cont">
           <img src="./assets/jpeg/cse.jpg" alt="Computer Science and Engineering" class="projects__row-img" loading="lazy" />
         </div>
@@ -63,7 +63,7 @@
         </div>
       </div>
 
-      <div class="projects__row sec-pad-odd">
+      <div class="projects__row">
         <div class="projects__row-img-cont">
           <img src="./assets/jpeg/civil.jpg" alt="Civil Engineering" class="projects__row-img" loading="lazy" />
         </div>
