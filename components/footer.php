@@ -12,10 +12,11 @@
       <a href="../committees.php">Committees</a>
       <a href="../document.php">Documents</a>
       <a href="../results.php">Results</a>
-      <a href="https://sujammu.samarth.ac.in/index.php/pgportal/grievance-public/public">uGRAMS(Grievance)</a>
-      <a href="../contact.php">Contact us here!</a>
+      <a href="https://sujammu.samarth.ac.in/index.php/pgportal/grievance-public/public">uGRAMS(Grievances)</a>
+      <a href="../contact.php">Reach us here!</a>
       <a href="https://unijammuopac.libsys10.in">eLibrary</a>
-      <a href="https://jammuuniversity.ac.in">UoJ</a>
+      <a href="https://jammuuniversity.ac.in">Univeristy of Jammu(Uoj)</a>
+      <a href="https://i4c.mha.gov.in/newsletter-manual.aspx">Cyber Security</a>
     </div>
     <div class="main-footer__upper">
       <div class="main-footer__row main-footer__row-1">
