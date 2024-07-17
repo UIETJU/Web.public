@@ -75,9 +75,9 @@
             Engineering (CE) with an intake of 60 seats (regular) and 6 seats (lateral).
           </p>
           <div class="projects__row-buttons">
-            <a href="https://drive.google.com/drive/folders/1ajVV8_1BfYWQtwLm-Kd6nyj8rTpSb6_e?usp=sharing" class="fa-file fa-lg alt-btn btn" target="_blank">Syllabus</a>
-            <a href="https://drive.google.com/drive/folders/1zR0kiL2ghS9Yjv6aO_kpw-N00zAkp1R5Pcf7suHlEsS-ARYau_Rby0BGpUZg9WJ6Sr9pn9co?usp=sharing" class="alt-btn fa-regular fa-file btn--med" target="_blank">Previous Year Papers</a>
-            <a href="tel:6005189080" class="alt-btn fa-solid fa-phone btn--med btn--theme dynamicBgClr" target="_blank">Reach the Department in-charge here!</in-charge>!</a>
+            <a href="https://drive.google.com/drive/folders/1ajVV8_1BfYWQtwLm-Kd6nyj8rTpSb6_e?usp=sharing" class=" alt-btn fa-solid fa-file fa-lg" target="_blank">Syllabus</a>
+            <a href="https://drive.google.com/drive/folders/1zR0kiL2ghS9Yjv6aO_kpw-N00zAkp1R5Pcf7suHlEsS-ARYau_Rby0BGpUZg9WJ6Sr9pn9co?usp=sharing" class="alt-btn fa-solid fa-file fa-lg" target="_blank">Previous Year Papers</a>
+            <a href="tel:6005189080" class="alt-btn fa-solid fa-phone fa-lg" target="_blank">Reach the Department in-charge here!</in-charge>!</a>
           </div>
         </div>
       </div>
