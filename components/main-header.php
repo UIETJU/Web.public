@@ -37,7 +37,7 @@
         <li class="header__link-wrapper" id="submenu-parent">
           <a href="#" class="header__link--main">Help!</a>
           <ul class="submenu">
-            <a href="https://forms.gle/bSRwEuV6sBcPyTRo6">uGRAMS</a>
+            <a href="https://sujammu.samarth.ac.in/index.php/pgportal/grievance-public/public">uGRAMS</a>
             <a href="/contact.php">Contact us here!</a>
           </ul>
         </li>
@@ -90,7 +90,7 @@
           <a href="./document.php">Documents</a>
         </li>
         <li class="header__sm-menu-link">
-          <a href="https://forms.gle/bSRwEuV6sBcPyTRo6">uGRAMS</a>
+          <a href="https://sujammu.samarth.ac.in/index.php/pgportal/grievance-public/public">uGRAMS</a>
           <a href="/contact.php">Contact us here!</a>
         </li>
       </ul>

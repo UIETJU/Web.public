@@ -12,7 +12,7 @@
       <a href="../committees.php">Committees</a>
       <a href="../document.php">Documents</a>
       <a href="../results.php">Results</a>
-      <a href="https://forms.gle/bSRwEuV6sBcPyTRo6">uGRAMS</a>
+      <a href="https://sujammu.samarth.ac.in/index.php/pgportal/grievance-public/public">uGRAMS(Grienvance)</a>
       <a href="../contact.php">Contact us here!</a>
       <a href="https://unijammuopac.libsys10.in">eLibrary</a>
       <a href="https://jammuuniversity.ac.in">UoJ</a>
