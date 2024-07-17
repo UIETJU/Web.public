@@ -668,7 +668,8 @@ table a:hover {
 }
 
 .right-text {
-  text-align: right !important;
+  text-align: justify !important;
+  text-justify: auto;
 }
 
 .blue-link {
@@ -1218,8 +1219,6 @@ table a:hover {
   max-width: 65rem;
   line-height: 1.5;
   margin-bottom: 3rem;
-  text-align: justify;
-  text-justify: auto;
 
 }
 
