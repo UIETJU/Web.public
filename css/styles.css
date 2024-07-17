@@ -1235,15 +1235,11 @@ table a:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: center;
-  text-transform: none;
-}
+  justify-items: center;
 
 .projects__row_buttons .btn {
   width: fit-content;
   margin-bottom: 10px;
-  text-align: center;
-  
 }
 
 /* Facilities */

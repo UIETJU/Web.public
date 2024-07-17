@@ -164,7 +164,7 @@ require '../../DB/db-connect.php';
                         <div class="carousel-slide">
                             <div class="gallery-container">
                                 <div class="gallery-image-container">
-                                    <img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['title']; ?>" />
+                                    <img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['title']; ?>" loading="lazy"/>
                                 </div>
                                 <div class="gallery-description">
                                     <h1 class="gallery-desc-title"><?php echo $slide['title']; ?></h1>
