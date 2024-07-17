@@ -34,9 +34,9 @@
   <section class="projects sec-pad--top uiet--animated-grid" style="background-color: #fff">
   <div class="main-container">
     <h2 class="heading heading-sec heading-sec__mb-bg">
-      <span class="heading-sec__main">Courses and Syllabus</span>
+      <span class="heading-sec__main">Our Programs</span>
       <span class="heading-sec__sub center-text">
-        Bachelor of Technology Programs at UIET, Kathua
+      At the University Institute of Engineering and Technology (UIET) Kathua, we offer a diverse range of Bachelor of Technology (B.Tech) programs designed to equip students with the knowledge and skills necessary to excel in the ever-evolving field of engineering and technology. Our programs are tailored to meet the demands of the industry and foster a culture of innovation, creativity, and excellence.
       </span>
     </h2>
 
@@ -50,9 +50,8 @@
             Computer Science and Engineering
           </h3>
           <p class="projects__row-content-desc">
-            UIET, Kathua is a constituent institution of the University of
-            Jammu, offering Bachelor of Technology course in Computer Science and
-            Engineering (CSE) with intake of 60 seats (regular) and 6 seats (lateral).
+          This program focuses on software development, algorithms, data structures, artificial intelligence, and more. It prepares students to become proficient software engineers and IT professionals. The course has an
+          intake of 60+6 (regular+lateral).
           </p>
           <div class="projects__row-buttons">
             <a href="https://drive.google.com/drive/folders/1GjbO1ejk2FsUiI4lCgFqeYxqkrhFta7_?usp=sharing" class="alt-btn btn fa-solid fa-file" target="_blank"> Syllabus</a>
@@ -69,9 +68,8 @@
         <div class="projects__row-content">
           <h3 class="projects__row-content-title">Civil Engineering</h3>
           <p class="projects__row-content-desc">
-            UIET, Kathua is a constituent institution of the University of
-            Jammu, offering Bachelor of Technology course in Civil
-            Engineering (CE) with an intake of 60 seats (regular) and 6 seats (lateral).
+          This course emphasizes the design, construction, and maintenance of infrastructure projects such as roads, bridges, buildings, and water supply systems. Graduates are well-prepared to tackle the challenges of modern urban development.  The course has an
+          intake of 60+6 (regular+lateral).
           </p>
           <div class="projects__row-buttons">
             <a href="https://drive.google.com/drive/folders/1ajVV8_1BfYWQtwLm-Kd6nyj8rTpSb6_e?usp=sharing" class=" alt-btn btn fa-solid fa-file" target="_blank"> Syllabus</a>
