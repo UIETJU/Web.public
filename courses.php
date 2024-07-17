@@ -56,9 +56,9 @@
             Engineering (CSE) with intake of 60 seats (regular) and 6 seats (lateral).
           </p>
           <div class="projects__row-buttons">
-            <a href="https://drive.google.com/drive/folders/1GjbO1ejk2FsUiI4lCgFqeYxqkrhFta7_?usp=sharing" class="btn fa-regular fa-file btn--med btn--theme dynamicBgClr" target="_blank">Syllabus</a>
-            <a href="https://drive.google.com/drive/folders/1zR0kiL2ghS9Yjv6aO_kpw-N00zAkp1R5Pcf7suHlEsS-ARYau_Rby0BGpUZg9WJ6Sr9pn9co?usp=sharing" class="btn fa-regular fa-file btn--med btn--theme dynamicBgClr" target="_blank">Previous Year Papers</a>
-            <a href="tel:01922291102" class="btn fa-solid fa-phone btn--med btn--theme dynamicBgClr" target="_blank">Contact: 01922291102</a>
+            <a href="https://drive.google.com/drive/folders/1GjbO1ejk2FsUiI4lCgFqeYxqkrhFta7_?usp=sharing" class="alt-btn fa-regular fa-file btn--med btn--theme dynamicBgClr" target="_blank">Syllabus</a>
+            <a href="https://drive.google.com/drive/folders/1zR0kiL2ghS9Yjv6aO_kpw-N00zAkp1R5Pcf7suHlEsS-ARYau_Rby0BGpUZg9WJ6Sr9pn9co?usp=sharing" class="alt-bt fa-regular fa-file btn--med btn--theme dynamicBgClr" target="_blank">Previous Year Papers</a>
+            <a href="tel:9149912146" class="alt-btn fa-solid fa-phone btn--med btn--theme dynamicBgClr" target="_blank">Reach the Department in-charge here!</a>
           </div>
         </div>
       </div>
@@ -75,9 +75,9 @@
             Engineering (CE) with an intake of 60 seats (regular) and 6 seats (lateral).
           </p>
           <div class="projects__row-buttons">
-            <a href="https://drive.google.com/drive/folders/1ajVV8_1BfYWQtwLm-Kd6nyj8rTpSb6_e?usp=sharing" class="alt-btn btn fa-regular fa-file" target="_blank">Syllabus</a>
-            <a href="https://drive.google.com/drive/folders/1zR0kiL2ghS9Yjv6aO_kpw-N00zAkp1R5Pcf7suHlEsS-ARYau_Rby0BGpUZg9WJ6Sr9pn9co?usp=sharing" class="btn fa-regular fa-file btn--med btn--theme dynamicBgClr" target="_blank">Previous Year Papers</a>
-            <a href="tel:01922291102" class="btn fa-solid fa-phone btn--med btn--theme dynamicBgClr" target="_blank">Contact: 01922291102</a>
+            <a href="https://drive.google.com/drive/folders/1ajVV8_1BfYWQtwLm-Kd6nyj8rTpSb6_e?usp=sharing" class="alt-btn fa-regular fa-file" target="_blank">Syllabus</a>
+            <a href="https://drive.google.com/drive/folders/1zR0kiL2ghS9Yjv6aO_kpw-N00zAkp1R5Pcf7suHlEsS-ARYau_Rby0BGpUZg9WJ6Sr9pn9co?usp=sharing" class="alt-btn fa-regular fa-file btn--med" target="_blank">Previous Year Papers</a>
+            <a href="tel:6005189080" class="alt-btn fa-solid fa-phone btn--med btn--theme dynamicBgClr" target="_blank">Reach the Department in-charge here!</in-charge>!</a>
           </div>
         </div>
       </div>
