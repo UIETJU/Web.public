@@ -231,7 +231,7 @@ try {
       </div>
     </div>
   </Section>
-  <?php require_once "components/footer.php" ?>
+  <?php require_once "components/footerN.php" ?>
   <script src="./js/index.js"></script>
   <script src="./js/preload.js"></script>
   <script src="./js/gallery.js"></script>

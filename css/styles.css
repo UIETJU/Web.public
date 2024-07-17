@@ -1225,6 +1225,17 @@ table a:hover {
   }
 }
 
+.projects__row-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projects__row-buttons .btn {
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
 /* Facilities */
 
 .facilities__row {
