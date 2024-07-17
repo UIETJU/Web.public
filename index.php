@@ -1,20 +1,5 @@
 <?php
 require '../../DB/db-connect.php';
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
-// try {
-//     $conn = mysqli_init();
-//     mysqli_options($conn, MYSQLI_OPT_CONNECT_TIMEOUT, 10); // Set timeout to 10 seconds
-//     mysqli_real_connect($conn, $server, $dbUserName, $dbUserPwd, $database);
-
-//     if (!$conn) {
-//         throw new mysqli_sql_exception("Connection failed: " . mysqli_connect_error());
-//     }
-// } catch (mysqli_sql_exception $e) {
-//     error_log($e->getMessage());  // Log the error message
-//     die("Database connection failed: " . $e->getMessage());
-// }
-
 ?>
 
 <!DOCTYPE html>
