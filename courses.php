@@ -36,8 +36,7 @@
     <h2 class="heading heading-sec heading-sec__mb-bg">
       <span class="heading-sec__main">Courses and Syllabus</span>
       <span class="heading-sec__sub center-text">
-        Courses offered at University Institute of Engineering and
-        Technology, Kathua
+        Bachelor of Technology Programs at UIET, Kathua
       </span>
     </h2>
 
