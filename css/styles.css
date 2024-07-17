@@ -228,6 +228,10 @@ textarea {
     top: 0;
   }
 
+  .carousel-indicator {
+    display: none;
+  }
+
   .gallery-image-container {
     max-width: 100%;
     max-height: 50vh;
@@ -300,6 +304,9 @@ textarea {
     border: 3px thin;
     font-size: 17px;
     padding: 15px;
+  }
+  .carousel-indicator {
+    display: none;
   }
 }
 
@@ -563,6 +570,7 @@ table a:hover {
 }
 
 @media only screen and (max-width: 37.5em) {
+
   table th,
   td,
   tr {
@@ -940,9 +948,11 @@ table a:hover {
   /* Optional: Add a filter to darken the background for better text visibility */
   border-radius: 15px;
 }
+
 .hidden {
   display: none;
 }
+
 #quote-meaning {
   font-size: 2rem;
   font-style: italic;
@@ -950,6 +960,7 @@ table a:hover {
   background: rgba(112, 112, 112, 0.7);
   border-radius: 15px;
 }
+
 .flip-quote,
 .flip-meaning {
   display: inline-block;
@@ -960,9 +971,11 @@ table a:hover {
 .flipped {
   opacity: 0;
 }
+
 .visible {
   opacity: 1;
 }
+
 @media (max-width: 600px) {
   .home-hero {
     background-attachment: scroll;
@@ -990,6 +1003,7 @@ table a:hover {
   #quote {
     font-size: 2.5rem;
   }
+
   #quote-meaning {
     font-size: 1.8rem;
   }
@@ -1003,6 +1017,7 @@ table a:hover {
   #quote {
     font-size: 3rem;
   }
+
   #quote-meaning {
     font-size: 2.5rem;
   }
@@ -1337,11 +1352,9 @@ table a:hover {
 /* Facilities */
 
 .contact {
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)
-    ),
+      rgba(0, 98, 185, 0.8)),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
@@ -1449,11 +1462,9 @@ table a:hover {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)
-    ),
+      rgba(0, 98, 185, 0.8)),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
