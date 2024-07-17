@@ -146,6 +146,8 @@ textarea {
   color: #5f3411 !important;
   font-weight: 400;
   margin-bottom: 0.8rem;
+  text-align :justify;
+  text-justify: auto;
 }
 
 .gallery-btn {
