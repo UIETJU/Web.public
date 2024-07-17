@@ -284,7 +284,7 @@ require '../../DB/db-connect.php';
         </div>
     </Section>
 
-    <?php require_once "components/footerN.php" ?>
+    <?php require_once "components/footer.php" ?>
     <script src="./js/index.js?t=<?= time(); ?>"></script>
     <script src="./js/preload.js"></script>
     <!-- <script src="./js/chatbot.js"></script> -->
