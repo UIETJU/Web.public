@@ -1236,11 +1236,13 @@ table a:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .projects__row-buttons .btn {
   width: fit-content;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 /* Facilities */
