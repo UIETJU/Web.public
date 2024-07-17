@@ -53,7 +53,7 @@
           This program focuses on software development, algorithms, data structures, artificial intelligence, and more. It prepares students to become proficient software engineers and IT professionals. The course has an
           intake of 60+6 (regular+lateral).
           </p>
-          <div class="projects__row-buttons">
+          <div class="projects__row_buttons">
             <a href="https://drive.google.com/drive/folders/1GjbO1ejk2FsUiI4lCgFqeYxqkrhFta7_?usp=sharing" class="alt-btn btn fa-solid fa-file" target="_blank"> Syllabus</a>
             <a href="https://drive.google.com/drive/folders/1zR0kiL2ghS9Yjv6aO_kpw-N00zAkp1R5Pcf7suHlEsS-ARYau_Rby0BGpUZg9WJ6Sr9pn9co?usp=sharing" class="fa-solid fa-file alt-btn btn "> Previous Year Papers</a>
             <a href="tel:9149912146" class="alt-btn btn fa-solid fa-phone" target="_blank"> Department in-charge here!👩‍🏫</a>
@@ -71,7 +71,7 @@
           This course emphasizes the design, construction, and maintenance of infrastructure projects such as roads, bridges, buildings, and water supply systems. Graduates are well-prepared to tackle the challenges of modern urban development.  The course has an
           intake of 60+6 (regular+lateral).
           </p>
-          <div class="projects__row-buttons">
+          <div class="projects__row_buttons">
             <a href="https://drive.google.com/drive/folders/1ajVV8_1BfYWQtwLm-Kd6nyj8rTpSb6_e?usp=sharing" class=" alt-btn btn fa-solid fa-file" target="_blank"> Syllabus</a>
             <a href="https://drive.google.com/drive/folders/1zR0kiL2ghS9Yjv6aO_kpw-N00zAkp1R5Pcf7suHlEsS-ARYau_Rby0BGpUZg9WJ6Sr9pn9co?usp=sharing" class="alt-btn btn fa-solid fa-file" target="_blank"> Previous Year Papers</a>
             <a href="tel:6005189080" class="alt-btn btn fa-solid fa-phone" id=target="_blank"> Department in-charge here!👨‍🏫</a>
