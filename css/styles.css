@@ -1236,6 +1236,7 @@ table a:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
 }
 
 .projects__row-buttons .btn {

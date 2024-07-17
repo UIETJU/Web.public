@@ -31,7 +31,7 @@
 
 <body>
   <?php require_once "components/navbar.php" ?>
-  <section class="projects sec-pad-even" style="background-color: #fff">
+  <section class="projects sec-pad--top uiet--animated-grid" style="background-color: #fff">
   <div class="main-container">
     <h2 class="heading heading-sec heading-sec__mb-bg">
       <span class="heading-sec__main">Courses and Syllabus</span>
@@ -41,8 +41,8 @@
       </span>
     </h2>
 
-    <div class="projects__content">
-      <div class="projects__row">
+    <div class="projects__content ">
+      <div class="projects__row sec-pad-even">
         <div class="projects__row-img-cont">
           <img src="./assets/jpeg/cse.jpg" alt="Computer Science and Engineering" class="projects__row-img" loading="lazy" />
         </div>
@@ -63,7 +63,7 @@
         </div>
       </div>
 
-      <div class="projects__row">
+      <div class="projects__row sec-pad-odd">
         <div class="projects__row-img-cont">
           <img src="./assets/jpeg/civil.jpg" alt="Civil Engineering" class="projects__row-img" loading="lazy" />
         </div>
