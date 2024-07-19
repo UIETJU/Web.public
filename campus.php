@@ -53,7 +53,7 @@
       UIET offers comfortable and well-maintained hostels for its students. The hostels provide a conducive living environment and are equipped with necessary amenities such as spacious rooms, study areas, common rooms, and 24/7 security.
     </p>
     <p class="facilities__row-content-desc left-text">
-      Our hostels aim to create a home away from home for UIETians, fostering a sense of community and facilitating their academic journey.
+      Our hostels aim to create a home away from home for UIETians, fostering a sense of community and facilitating their academic journey. Hostels are available for male as well female boarders.
     </p>
     
     <!-- Button for Hostel Form -->
