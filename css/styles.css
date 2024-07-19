@@ -1253,20 +1253,11 @@ table a:hover {
 .facilities__row-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007BFF;
-  /* Primary button color */
   color: #fff;
   /* Text color */
   text-align: center;
   text-decoration: none;
-  border-radius: 5px;
   font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.facilities__row-button:hover {
-  background-color: #0056b3;
-  /* Darker shade for hover */
 }
 
 .facilities__row {
