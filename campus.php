@@ -43,23 +43,25 @@
       <div class="facilities__content">
         <!-- 1 -->
         <div class="facilities__row">
-          <div class="facilities__row-img-cont">
-            <img src="assets/amenities/hostels.JPG" alt="Hostel Image" class="facilities__row-img" loading="lazy" />
-          </div>
-          <div class="facilities__row-content">
-            <h3 class="facilities__row-content-title">Hostels</h3>
-            <p class="facilities__row-content-desc left-text">
-              UIET offers comfortable and well-maintained hostels for its
-              students. The hostels provide a conducive living environment and
-              are equipped with necessary amenities such as spacious rooms,
-              study areas, common rooms, and 24/7 security.
-            <p class="facilities__row-content-desc left-text">Our hostels aim to create a home away from home for
-              UIETians,
-              fostering a sense of community and facilitating their academic
-              journey.</p>
-            </p>
-          </div>
-        </div>
+  <div class="facilities__row-img-cont">
+    <img src="assets/amenities/hostels.JPG" alt="Hostel Image" class="facilities__row-img" loading="lazy" />
+  </div> 
+
+  <div class="facilities__row-content">
+    <h3 class="facilities__row-content-title">Hostels</h3>
+    <p class="facilities__row-content-desc left-text">
+      UIET offers comfortable and well-maintained hostels for its students. The hostels provide a conducive living environment and are equipped with necessary amenities such as spacious rooms, study areas, common rooms, and 24/7 security.
+    </p>
+    <p class="facilities__row-content-desc left-text">
+      Our hostels aim to create a home away from home for UIETians, fostering a sense of community and facilitating their academic journey.
+    </p>
+    
+    <!-- Button for Hostel Form -->
+    <div class="facilities__row-button-cont">
+      <a href="https://drive.google.com/file/d/1uwg7U-Cb81akKeMnn45oiJfls1tuHrkU" class="facilities__row-button">Apply for Hostel</a>
+    </div>
+  </div>
+</div>
 
         <!-- 2 -->
         <div class="facilities__row">
