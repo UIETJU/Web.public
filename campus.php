@@ -58,7 +58,7 @@
     
     <!-- Button for Hostel Form -->
     <div class="facilities__row-button-cont">
-      <a href="https://drive.google.com/file/d/1uwg7U-Cb81akKeMnn45oiJfls1tuHrkU" class="facilities__row-button">Apply for Hostel</a>
+      <a href="https://drive.google.com/file/d/1uwg7U-Cb81akKeMnn45oiJfls1tuHrkU" class="facilities__row-button alt-btn btn fa-solid fa-file"> Apply for Hostel!</a>
     </div>
   </div>
 </div>
