@@ -21,7 +21,7 @@ require '../../DB/db-connect.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="University Institute of Engineering & Technology (UIET) Kathua, is a constituent Engineering College of University of Jammu, J&K, India.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home - University Institute of Engineering and Technology, Kathua</title>
+    <title>Welcome to University Institute of Engineering and Technology, Kathua</title>
     <link rel="icon" href="./assets/png/uiet_header.png">
     <link rel="stylesheet" href="css/styles.css?t=<?php echo time(); ?>">
     <link rel="stylesheet" href="./css/chatbot.css?t=<?php echo time(); ?>">

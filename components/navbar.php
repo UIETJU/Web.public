@@ -38,16 +38,17 @@
           </a>
         </li>
         <li class="header__link-wrapper" id="submenu-parent">
-          <a href="#" class="header__link">Help!</a>
+          <a href="#" class="header__link">Reach Us!</a>
           <ul class="submenu">
             <a href="https://sujammu.samarth.ac.in/index.php/pgportal/grievance-public/public">uGRAMS</a>
-            <a href="/contact.php">Contact us here!</a>
+            <a href="/contact.php">Reach us!</a>
           </ul>
         </li>
       </ul>
       <div class="header__main-ham-menu-cont">
         <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-        <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
+        <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+          class="header__main-ham-menu-close d-none" />
       </div>
     </div>
   </div>
@@ -94,7 +95,7 @@
         </li>
         <li class="header__sm-menu-link">
           <a href="https://sujammu.samarth.ac.in/index.php/pgportal/grievance-public/public">uGRAMS</a>
-          <a href="/contact.php">Contact us here!</a>
+          <a href="/contact.php">Reach us!</a>
         </li>
       </ul>
     </div>
