@@ -48,7 +48,7 @@ mysqli_close($conn);
 </head>
 
 <body>
-  <?php require_once "components/navbar.php" ?>
+  <?php require_once "components/header.php" ?>
   <section id="faculty" class="projects sec-pad--top">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-bg">

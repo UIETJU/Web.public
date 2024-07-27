@@ -15,7 +15,7 @@
   <meta name="description"
     content="The University Institute of Engineering & Technology (UIET) was established by the University of Jammu in 2017 as a ‘Centre of Excellence to provide quality education in Engineering & Technology.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact - University Institute of Engineering and Technology, Kathua</title>
+  <title>Reach Us! - University Institute of Engineering and Technology, Kathua</title>
   <link rel="icon" href="./assets/png/uiet_header.png">
   <link rel="stylesheet" href="css/styles.css?t=<?php echo time(); ?>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
 </head>
 
 <body>
-  <?php require_once "components/navbar.php"; ?>
+  <?php require_once "components/header.php"; ?>
 
   <main class="contact-page">
     <section class="projects sec-pad--top uiet--animated-grid">
@@ -45,14 +45,18 @@
           <div class="contact-card">
             <i class="fa-solid fa-phone contact-card__icon"></i>
             <h2 class="contact-card__title">Call us</h2>
+            <a href="tel:+91 9596951891" class="contact-card__link">☎️ Office</a>
+            <a href="tel:+91 9419129161" class="contact-card__link">☎️ Assistant Registrar</a>
             <a href="tel:01922291102" class="contact-card__link">☎️ General Queries</a>
+            
+
           </div>
 
           <div class="contact-card">
             <i class="fa-solid fa-envelope contact-card__icon"></i>
             <h2 class="contact-card__title">Mail us</h2>
-            <a href="mailto:uietkc@gmail.com" class="contact-card__link">📧 General Queries</a>
             <a href="mailto:itcell.uietju@gmail.com" class="contact-card__link">📧 IT Cell</a>
+            <a href="mailto:uietkc@gmail.com" class="contact-card__link">📧 General Queries</a>
             <a href="mailto:studentswelfare.uietju@gmail.com" class="contact-card__link">📧 Students Welfare</a>
           </div>
 

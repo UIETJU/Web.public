@@ -19,7 +19,7 @@
   <meta name="description" content=" The University Institute of Engineering & Technology (UIET) was established by the University of Jammu in 2017 as a ‘Centre of Excellence to provide quality education in Engineering & Technology." />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>
-    Placements - Jammu University's Institute of Engineering and Technology, Kathua
+    Placements - University's Institute of Engineering and Technology, Kathua
   </title>
   <link rel="icon" href="./assets/png/uiet_header.png" />
   <link rel="stylesheet" href="css/styles.css<?php echo "?t=" . time(); ?>" />
@@ -30,7 +30,7 @@
 </head>
 
 <body>
-  <?php require_once "components/navbar.php" ?>
+  <?php require_once "components/header.php" ?>
   <section id="placements" class="projects sec-pad--top uiet--animated-grid">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-bg">

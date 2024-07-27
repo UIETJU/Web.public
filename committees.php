@@ -56,7 +56,7 @@ $committees = [
 
 <body>
     <nav>
-        <?php require_once "components/navbar.php" ?>
+        <?php require_once "components/header.php" ?>
     </nav>
     <section class="projects sec-pad--top">
         <div class="main-container">

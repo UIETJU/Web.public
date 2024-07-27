@@ -30,7 +30,7 @@
 </head>
 
 <body>
-  <?php require_once "components/navbar.php" ?>
+  <?php require_once "components/header.php" ?>
   <section class="projects sec-pad--top uiet--animated-grid" style="background-color: #fff">
   <div class="main-container">
     <h2 class="heading heading-sec heading-sec__mb-bg">

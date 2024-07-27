@@ -36,7 +36,7 @@ mysqli_close($conn);
         content=" The University Institute of Engineering & Technology (UIET) was established by the University of Jammu in 2017 as a ‘Centre of Excellence to provide quality education in Engineering & Technology." />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-        Leadership - Jammu University's Institute of Engineering and Technology, Kathua
+        Leadership - University's Institute of Engineering and Technology, Kathua
     </title>
     <link rel="icon" href="./assets/png/uiet_header.png" />
     <link rel="stylesheet" href="css/styles.css<?php echo "?t=" . time(); ?>" />
@@ -48,7 +48,7 @@ mysqli_close($conn);
 </head>
 
 <body>
-    <?php require_once "components/navbar.php" ?>
+    <?php require_once "components/header.php" ?>
     <section id="leadership" class="projects sec-pad--top">
         <div class="main-container">
             <h2 class="heading heading-sec heading-sec__mb-bg">

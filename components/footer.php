@@ -47,12 +47,18 @@
         </div>
       </div>
       <div class="main-footer__row main-footer__row-2">
-        <h2 class="heading heading-sm text-lt">Reach us</h2>
-        <p style="font-size: 14px">
-          <a class="uiet--footer-contact--link" href="tel:01922291102">📞 Phone: 01922291102</a>
+        <h2 class="heading heading-sm text-lt"></h2>
+        <p style="font-size: 20px">
+        <i class="fa-solid fa-phone"></i> 
+          <a class="uiet--footer-contact--link" href="tel:01922291102">01922291102</a>
         </p>
-        <p style="font-size: 14px">
-          <a class="uiet--footer-contact--link" href="mailto:uietkc@gmail.com">📧 Email: uietkc@gmail.com</a>
+        <p style="font-size: 20px">
+        <i class="fa-solid fa-at"></i>
+          <a class="uiet--footer-contact--link" href="mailto:uietkc@gmail.com">uietkc@gmail.com</a>
+        </p>
+        <p style="font-size: 20px">
+        <i class="fa-solid fa-globe"></i>
+          <a class="uiet--footer-contact--link" href="mailto:itcell.uietju@gmail.com">Web Master</a>
         </p>
       </div>
     </div>
