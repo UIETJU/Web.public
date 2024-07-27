@@ -1356,17 +1356,18 @@ table a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.4rem 1rem;
+  padding: 0.4rem 5rem;
   line-height: normal !important;
 }
 
 @media only screen and (max-width: 56.25em) {
   .header__content {
-    padding: 0.2 0.4rem;
+    padding: 0 2rem;
   }
 }
 
 .header__logo-container {
+  margin-left: -25px;
   display: inline-block;
   position: relative;
   /* Needed for absolute positioning of child elements */

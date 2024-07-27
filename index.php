@@ -24,7 +24,6 @@ require '../../DB/db-connect.php';
     <title>Welcome to University Institute of Engineering and Technology, Kathua</title>
     <link rel="icon" href="./assets/png/uiet_header.png">
     <link rel="stylesheet" href="css/styles.css?t=<?php echo time(); ?>">
-    <link rel="stylesheet" href="./css/chatbot.css?t=<?php echo time(); ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -286,8 +285,6 @@ require '../../DB/db-connect.php';
 
     <?php require_once "components/footer.php" ?>
     <script src="./js/index.js?t=<?= time(); ?>"></script>
-    <script src="./js/preload.js"></script>
-    <!-- <script src="./js/chatbot.js"></script> -->
     <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
 </body>
 
