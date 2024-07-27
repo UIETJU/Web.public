@@ -1,6 +1,6 @@
 <?php
 // for main site production
-require './../DB/db-connect.php';
+require '../../DB/db-connect.php';
 
 if (!$conn) {
     die("Connection Failed! " . mysqli_connect_error());
