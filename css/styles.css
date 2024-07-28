@@ -1367,47 +1367,28 @@ table a:hover {
 }
 
 .header__logo-container {
-  margin-left: -25px;
   display: inline-block;
   position: relative;
-  /* Needed for absolute positioning of child elements */
+  /* Position the logo container absolutely */
+  top: -5%;
+  /* Align to the top */
+  left: -5%;
+  /* Align to the left */
+
   cursor: pointer;
   transition: color 0.3s;
   /* Smooth transition for color changes */
 }
 
-.header__logo-background {
-  width: 14rem;
-  /* Size of the circular background */
-  height: 14rem;
-  background-color: rgba(255, 255, 255, 0.788);
-  /* Contrast against dark backgrounds */
-  border-radius: 50%;
-  /* Circular shape */
-  position: absolute;
-  /* Positioned relative to the container */
-  top: 50%;
-  /* Center vertically */
-  left: 50%;
-  /* Center horizontally */
-  transform: translate(-50%, -50%);
-  /* Center both horizontally and vertically */
-  z-index: 1;
-  /* Place behind the logo image */
-}
-
 .header__logo-img {
-  width: 15rem;
+  width: 18rem;
   /* Size of the logo image */
-  height: 15rem;
+  height: auto;
+  /* Maintain aspect ratio */
   object-fit: contain;
   /* Ensure the image fits within the container */
   object-position: center;
   /* Center the image */
-  position: relative;
-  /* Positioned relative to the container */
-  z-index: 2;
-  /* Ensure it is above the background */
 }
 
 /* Responsive styles for tablets and smaller screens */
@@ -1415,13 +1396,6 @@ table a:hover {
   .header__logo-img {
     width: 12rem;
     /* Reduced size for smaller screens */
-    height: 11rem;
-  }
-
-  .header__logo-background {
-    width: 10rem;
-    /* Match the background size with the logo */
-    height: 10rem;
   }
 }
 
@@ -2635,13 +2609,18 @@ h3 {
   font-weight: bold;
   color: #40a4ec;
 }
-.highlight:hover,:active{
-color:#f0732b; ;
+
+.highlight:hover,
+:active {
+  color: #f0732b;
+  ;
 }
-.fa-at{
+
+.fa-at {
   color: skyblue;
 }
-.fa-globe{
+
+.fa-globe {
   color: green;
 
 }

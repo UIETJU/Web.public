@@ -1,10 +1,7 @@
 <header class="header">
   <div class="header__content">
     <div class="header__logo-container">
-      <div class="header__logo-background"></div>
-      <div class="header__logo-center">
-        <img src="assets/png/uiet_header.png" alt="Logo" class="header__logo-img">
-      </div>
+      <img src="assets/png/uiet_header.png" alt="Logo" class="header__logo-img">
     </div>
     <nav class="header__main">
       <ul class="header__links">
