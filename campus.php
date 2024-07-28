@@ -16,7 +16,8 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content=" The University Institute of Engineering & Technology (UIET) was established by the University of Jammu in 2017 as a ‘Centre of Excellence to provide quality education in Engineering & Technology." />
+  <meta name="description"
+    content=" The University Institute of Engineering & Technology (UIET) was established by the University of Jammu in 2017 as a ‘Centre of Excellence to provide quality education in Engineering & Technology." />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>
     Campus- University's Institute of Engineering and Technology, Kathua
@@ -25,7 +26,8 @@
   <link rel="stylesheet" href="css/styles.css<?php echo "?t=" . time(); ?>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
   <script src="https://kit.fontawesome.com/ed322df7d9.js" crossorigin="anonymous"></script>
 </head>
 
@@ -43,25 +45,29 @@
       <div class="facilities__content">
         <!-- 1 -->
         <div class="facilities__row">
-  <div class="facilities__row-img-cont">
-    <img src="assets/amenities/hostels.JPG" alt="Hostel Image" class="facilities__row-img" loading="lazy" />
-  </div> 
+          <div class="facilities__row-img-cont">
+            <img src="assets/amenities/hostels.JPG" alt="Hostel Image" class="facilities__row-img" loading="lazy" />
+          </div>
 
-  <div class="facilities__row-content">
-    <h3 class="facilities__row-content-title">Hostels</h3>
-    <p class="facilities__row-content-desc left-text">
-      UIET offers comfortable and well-maintained hostels for its students. The hostels provide a conducive living environment and are equipped with necessary amenities such as spacious rooms, study areas, common rooms, and 24/7 security.
-    </p>
-    <p class="facilities__row-content-desc left-text">
-      Our hostels aim to create a home away from home for UIETians, fostering a sense of community and facilitating their academic journey. Hostels are available for male as well female boarders.
-    </p>
-    
-    <!-- Button for Hostel Form -->
-    <div class="facilities__row-button-cont">
-      <a href="https://drive.google.com/file/d/1uwg7U-Cb81akKeMnn45oiJfls1tuHrkU" class="facilities__row-button btn fa-solid fa-file"> Apply for Hostel!</a>
-    </div>
-  </div>
-</div>
+          <div class="facilities__row-content">
+            <h3 class="facilities__row-content-title">Hostels</h3>
+            <p class="facilities__row-content-desc left-text">
+              UIET offers comfortable and well-maintained hostels for its students. The hostels provide a conducive
+              living environment and are equipped with necessary amenities such as spacious rooms, study areas, common
+              rooms, and 24/7 security.
+            </p>
+            <p class="facilities__row-content-desc left-text">
+              Our hostels aim to create a home away from home for UIETians, fostering a sense of community and
+              facilitating their academic journey. Hostels are available for male as well female boarders.
+            </p>
+
+            <!-- Button for Hostel Form -->
+            <div class="facilities__row-button-cont">
+              <a href="https://drive.google.com/file/d/1uwg7U-Cb81akKeMnn45oiJfls1tuHrkU"
+                class="facilities__row-button btn fa-solid fa-file"> Apply for Hostel!</a>
+            </div>
+          </div>
+        </div>
 
         <!-- 2 -->
         <div class="facilities__row">
@@ -75,7 +81,8 @@
               Nevertheless, at UIET we try to ensure that students gain
               hands-on experience and practical exposure in their respective
               fields of study.
-            <p class="facilities__row-content-desc left-text">The labs and workshops are being conducted at <a id=bus href="https://www.govtpolytechnicjammu.edu.in">Government Polytechnic Jammu</a> for the time
+            <p class="facilities__row-content-desc left-text">The labs and workshops are being conducted at <a id=bus
+                href="https://www.govtpolytechnicjammu.edu.in">Government Polytechnic Jammu</a> for the time
               being! We regret the same and are working to remedy the situation!</p>
             </p>
           </div>
@@ -192,6 +199,7 @@
     </div>
   </section>
   <div class="disclaimer">
+    <h4>Important Disclosure</h4>
     <p>Above images are not representative of the acutal campus infrastructure and are merely for representational
       purposes only. Visit our gallery and Social Media handles for more.
     </p>

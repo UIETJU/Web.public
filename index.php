@@ -269,11 +269,12 @@ require '../../DB/db-connect.php';
                         <h3 class="projects__row-content-title">Admissions 2024-25!</h3>
                         <h3 class="projects__row-content-desc">Preference for admissions:</h3>
                         <ol class="projects__row-content-desc">
-                            <li>Round-1:-<a class="highlight" href="https://jeemain.nta.ac.in" target="_blank">JEE Mains Score 📃</a></li>
-                            <li>Round-2(if seats vaccant):-<a class="highlight" href="https://cuetug.ntaonline.in/universities/eligibility/Nzk=" target="_blank">CUET-UG Score 📃</a></li>
-                            <li>Round-3(if seats vaccant):-<a class="highlight" href="https://www.cbse.gov.in/cbsenew/cbse.html" target="_blank">Higher Secondary Score 📃</a>
+                            <li>Round-1:-<a class="highlight" href="https://jeemain.nta.ac.in" target="_blank">JEE Mains Score</a></li>
+                            <li>Round-2(if seats vaccant):-<a class="highlight" href="https://examsaudit.ntaonline.in/CUET_landing/public/eligibility/Nzk=" target="_blank">CUET-UG Score</a></li>
+                            <li>Round-3(if seats vaccant):-<a class="highlight" href="https://www.cbse.gov.in/cbsenew/cbse.html" target="_blank">Higher Secondary Score</a>
                             </li>
                         </ol>
+                        <h4 class="projects__row-content-desc disclaimer">Update: CUET and 12th based admissions will start soon! </h4>
                         <div class="side-img-link-container">
                             <a href="https://drive.google.com/file/d/1ikDsfxCggasVyDdQD0wsOaBazohtwx9Z/view?usp=sharing" class="btn alt-btn" target="_blank">Admission Notice 2024</a>
                         </div>

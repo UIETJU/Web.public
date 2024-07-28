@@ -1665,7 +1665,7 @@ table a:hover {
 
 .social-icons a:hover,
 .social-icons a:active {
-  color:#90c7f6;
+  color: #90c7f6;
 }
 
 /* Lower Footer Section */
@@ -2111,7 +2111,7 @@ table a:hover {
 }
 
 .disclaimer:before {
-  content: 'Disclaimer:';
+
   font-style: normal;
   font-weight: bold;
   font-size: 1em;

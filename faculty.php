@@ -117,8 +117,11 @@ mysqli_close($conn);
     </div>
   </section>
   <div class="disclaimer">
-    <p>Due to Administrative reasons entire staff at UIET is engaged at Annual Academic Arrangement basis, <a id="exams"
-        href="https://drive.google.com/file/d/1Ej44pR_8y65LI9jSKxv9Q2S_vXwKNUXT/view?usp=sharing">more on this...📃</a>
+    <h4>Important Dislosure</h4>
+    <p>Due to Administrative reasons entire staff at UIET is engaged at Annual Academic Arrangement basis, inconvinience
+      is regretted, <a class="highlight"
+        href="https://drive.google.com/file/d/1Ej44pR_8y65LI9jSKxv9Q2S_vXwKNUXT/view?usp=sharing">more on this... <i
+          class="fa-regular fa-file-lines"></i></a>
     </p>
   </div>
   <?php require_once "components/footer.php" ?>
