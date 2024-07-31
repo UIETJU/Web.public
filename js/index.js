@@ -75,8 +75,18 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 1000); // Display modal after 1 second (1000 milliseconds)
     }
 
+    // Function to hide the modal after 8 seconds
+    function hideModal() {
+      setTimeout(function () {
+        modal.style.display = 'none';
+      }, 8000); // Hide modal after 8 seconds (8000 milliseconds)
+    }
+
     // Call displayModal once to show the modal after the delay
     displayModal();
+
+    // Call hideModal to hide the modal after 8 seconds
+    hideModal();
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName('close')[0];
