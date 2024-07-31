@@ -138,7 +138,7 @@ require '../../DB/db-connect.php';
     <!-- Gallery Starts -->
     <section id="gallery" class="projects sec-pad-odd spacer">
         <?php
-        $sql = "SELECT image, description, title, NoteURL, AlbumURL FROM Gallery";
+       $sql = "SELECT image, description, title, NoteURL, AlbumURL FROM Gallery ORDER BY id DESC";
         $result = $conn->query($sql);
         $slides = [];
         if ($result->num_rows > 0) {
