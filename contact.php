@@ -45,9 +45,11 @@
           <div class="contact-card">
             <i class="fa-solid fa-phone contact-card__icon"></i>
             <h2 class="contact-card__title">Call us</h2>
-            <a href="tel:+91 9596951891" class="contact-card__link">☎️ Office</a>
-            <a href="tel:+91 9419129161" class="contact-card__link">☎️ Assistant Registrar</a>
-            <a href="tel:01922291102" class="contact-card__link">☎️ General Queries</a>
+            <a href="tel:01922297470" class="contact-card__link"><i class="fa-solid fa-hand-holding-hand"></i> Helpline </a>
+            <a href="tel:+91 9596951891" class="contact-card__link"><i class="fa-solid fa-mobile"></i> Office in-charge</a>
+            <a href="tel:01922291102" class="contact-card__link"><i class="fa-solid fa-phone"></i> Kathua Campus</a>
+            <a href="tel:+91 9419129161" class="contact-card__link"><i class="fa-solid fa-mobile"></i> Assistant Registrar Campus</a>
+            
             
 
           </div>

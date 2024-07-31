@@ -42,7 +42,7 @@
       <div class="footer-row footer-contact">
         <p>
           <i class="fa-solid fa-phone"></i>
-          <a href="tel:01922291102"> 01922291102</a>
+          <a href="tel:01922291102"> 01922297470</a>
         </p>
         <p>
           <i class="fa-solid fa-globe"></i>
