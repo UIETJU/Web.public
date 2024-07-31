@@ -1,40 +1,25 @@
-const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont');
-const smallMenu = document.querySelector('.header__sm-menu');
-const headerHamMenuBtn = document.querySelector('.header__main-ham-menu');
-const headerHamMenuCloseBtn = document.querySelector(
-  '.header__main-ham-menu-close'
-);
-const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link');
-const mainHeader = document.querySelector('.header');
-const transparentHeader = document.querySelector('.transparent-header');
-const headerLinks = document.querySelectorAll('.header__link');
+const hamMenuBtn = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+const menuOpenIcon = document.querySelector('.menu-toggle-open');
+const menuCloseIcon = document.querySelector('.menu-toggle-close');
 
 hamMenuBtn.addEventListener('click', () => {
-  if (smallMenu.classList.contains('header__sm-menu--active')) {
-    smallMenu.classList.remove('header__sm-menu--active');
-  } else {
-    smallMenu.classList.add('header__sm-menu--active');
-  }
-  if (headerHamMenuBtn.classList.contains('d-none')) {
-    headerHamMenuBtn.classList.remove('d-none');
-    headerHamMenuCloseBtn.classList.add('d-none');
-  } else {
-    headerHamMenuBtn.classList.add('d-none');
-    headerHamMenuCloseBtn.classList.remove('d-none');
-  }
+  menu.classList.toggle('active');
+  menuOpenIcon.classList.toggle('hidden');
+  menuCloseIcon.classList.toggle('hidden');
 });
 
-for (let i = 0; i < headerSmallMenuLinks.length; i++) {
-  headerSmallMenuLinks[i].addEventListener('click', () => {
-    smallMenu.classList.remove('header__sm-menu--active');
-    headerHamMenuBtn.classList.remove('d-none');
-    headerHamMenuCloseBtn.classList.add('d-none');
+document.querySelectorAll('.menu-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('active');
+    menuOpenIcon.classList.remove('hidden');
+    menuCloseIcon.classList.add('hidden');
   });
-}
+});
 
 // Logo Click Event
-const headerLogoConatiner = document.querySelector('.header__logo-container');
-headerLogoConatiner.addEventListener('click', () => {
+const headerLogoContainer = document.querySelector('.header__content');
+headerLogoContainer.addEventListener('click', () => {
   location.href = 'index.php';
 });
 
@@ -201,34 +186,34 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
- //Quote Meaning Flip//
-document.addEventListener("DOMContentLoaded", function() {
-    var quoteElement = document.getElementById("quote");
-    var meaningElement = document.getElementById("quote-meaning");
+//Quote Meaning Flip//
+document.addEventListener("DOMContentLoaded", function () {
+  var quoteElement = document.getElementById("quote");
+  var meaningElement = document.getElementById("quote-meaning");
 
-    // Function to flip the quote to its meaning and back
-    function toggleFlip() {
-        if (quoteElement.classList.contains("hidden")) {
-            meaningElement.classList.add("flipped");
-            setTimeout(function() {
-                meaningElement.classList.add("hidden");
-                quoteElement.classList.remove("hidden");
-                quoteElement.classList.add("visible");
-            }, 600); // Match the transition time for a smooth flip
-        } else {
-            quoteElement.classList.add("flipped");
-            setTimeout(function() {
-                quoteElement.classList.add("hidden");
-                meaningElement.classList.remove("hidden");
-                meaningElement.classList.add("visible");
-            }, 600); // Match the transition time for a smooth flip
-        }
+  // Function to flip the quote to its meaning and back
+  function toggleFlip() {
+    if (quoteElement.classList.contains("hidden")) {
+      meaningElement.classList.add("flipped");
+      setTimeout(function () {
+        meaningElement.classList.add("hidden");
+        quoteElement.classList.remove("hidden");
+        quoteElement.classList.add("visible");
+      }, 600); // Match the transition time for a smooth flip
+    } else {
+      quoteElement.classList.add("flipped");
+      setTimeout(function () {
+        quoteElement.classList.add("hidden");
+        meaningElement.classList.remove("hidden");
+        meaningElement.classList.add("visible");
+      }, 600); // Match the transition time for a smooth flip
     }
+  }
 
-    // Flip the quote to its meaning after a delay (e.g., 5 seconds)
-    setTimeout(toggleFlip, 2500); // 5000ms = 5 seconds
+  // Flip the quote to its meaning after a delay (e.g., 5 seconds)
+  setTimeout(toggleFlip, 2500); // 5000ms = 5 seconds
 
-    // Flip the quote to its meaning and back when the quote or meaning is clicked
-    quoteElement.addEventListener("click", toggleFlip);
-    meaningElement.addEventListener("click", toggleFlip);
+  // Flip the quote to its meaning and back when the quote or meaning is clicked
+  quoteElement.addEventListener("click", toggleFlip);
+  meaningElement.addEventListener("click", toggleFlip);
 });
