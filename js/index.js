@@ -18,7 +18,7 @@ document.querySelectorAll('.menu-links a').forEach(link => {
 });
 
 // Logo Click Event
-const headerLogoContainer = document.querySelector('.header__content');
+const headerLogoContainer = document.querySelector('.header__logo');
 headerLogoContainer.addEventListener('click', () => {
   location.href = 'index.php';
 });
