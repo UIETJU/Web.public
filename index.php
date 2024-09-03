@@ -296,7 +296,7 @@ require '../../DB/db-connect.php';
                             </li>
                         </ol>
                         <h4 class="projects__row-content-desc disclaimer">Update: Apply for Mop-Up Round admissions!
-                            <br> Counse;ling to be held on 9th September, 2024!
+                            <br> Counselling to be held on 9th September, 2024!
                         </h4>
                         <div class="side-img-link-container">
                             <a href="https://drive.google.com/file/d/1ikDsfxCggasVyDdQD0wsOaBazohtwx9Z/view?usp=sharing"
