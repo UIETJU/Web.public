@@ -138,7 +138,7 @@ require '../../DB/db-connect.php';
     <!-- Gallery Starts -->
     <section id="gallery" class="projects sec-pad-odd spacer">
         <?php
-       $sql = "SELECT image, description, title, NoteURL, AlbumURL FROM Gallery ORDER BY id DESC";
+        $sql = "SELECT image, description, title, NoteURL, AlbumURL FROM Gallery ORDER BY id DESC";
         $result = $conn->query($sql);
         $slides = [];
         if ($result->num_rows > 0) {
@@ -295,7 +295,9 @@ require '../../DB/db-connect.php';
                                     Score</a>
                             </li>
                         </ol>
-                        <h4 class="projects__row-content-desc disclaimer">Update: Apply for CUET and 12th based admissions! </h4>
+                        <h4 class="projects__row-content-desc disclaimer">Update: Apply for Mop-Up Round admissions!
+                            <br> Counse;ling to be held on 9th September, 2024!
+                        </h4>
                         <div class="side-img-link-container">
                             <a href="https://drive.google.com/file/d/1ikDsfxCggasVyDdQD0wsOaBazohtwx9Z/view?usp=sharing"
                                 class="btn alt-btn" target="_blank">Admission Notice 2024</a>
