@@ -274,9 +274,8 @@ require '../../DB/db-connect.php';
             <div class="projects__content">
                 <div class="projects__row">
                     <div class="projects__row-img-cont">
-                        <picture class="projects__row-img-fit crop-fit">
-                            <source srcset="assets/webp/uietthumbnail.webp" type="image/webp" />
-                            <source srcset="assets/jpeg/uietthumbnail-min.jpg" type="image/jpeg" />
+                        <picture class="projects__row-img-fit">
+                            <source srcset="assets/png/uiettn.png" type="image/jpeg" />
                             <img class="projects__row-img-fit crop-fit" src="assets/jpeg/uietthumbnail-min.jpg"
                                 alt="UIET Kathua" />
                         </picture>
@@ -296,6 +295,7 @@ require '../../DB/db-connect.php';
                             </li>
                         </ol>
                         <h4 class="projects__row-content-desc disclaimer">Update: Apply for Mop-Up Round admissions!
+                            <br>
                             <br> Counselling to be held on 9th September, 2024!
                         </h4>
                         <div class="side-img-link-container">
