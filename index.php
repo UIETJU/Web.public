@@ -274,7 +274,7 @@ require '../../DB/db-connect.php';
             <div class="projects__content">
                 <div class="projects__row">
                     <div class="projects__row-img-cont">
-                        <picture class="projects__row-img-fit">
+                        <picture class="projects__row-img-fit crop-fit">
                             <source srcset="assets/png/uiettn.png" type="image/jpeg" />
                             <img class="projects__row-img-fit crop-fit" src="assets/jpeg/uietthumbnail-min.jpg"
                                 alt="UIET Kathua" />
