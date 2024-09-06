@@ -60,7 +60,7 @@
       <h2>Connect @UIET</h2>
       <div class="social-icons">
         <a target="_blank"
-          href="https://in.linkedin.com/in/university-institute-of-engineering-and-technology-kathua-campus-university-of-jammu-b2a7b2240">
+          href="https://www.linkedin.com/company/uiet-kathua/">
           <i class="fa-brands fa-linkedin"></i>
         </a>
         <a target="_blank" href="https://www.youtube.com/@uietkathua/featured">
@@ -76,7 +76,7 @@
           <i class="fa-brands fa-github"></i>
         </a>
         <a target="_blank" href="https://twitter.com/uietkathua">
-          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-x-twitter"></i>
         </a>
       </div>
     </div>

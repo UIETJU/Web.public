@@ -73,12 +73,12 @@
               <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@uietkathua/featured"
                 class="social-links__item"><i class="fa-brands fa-youtube"></i></a>
               <a target="_blank" rel="noreferrer"
-                href="https://in.linkedin.com/in/university-institute-of-engineering-and-technology-kathua-campus-university-of-jammu-b2a7b2240"
+                href="https://www.linkedin.com/company/uiet-kathua/"
                 class="social-links__item"><i class="fa-brands fa-linkedin"></i></a>
               <a target="_blank" rel="noreferrer" href="https://twitter.com/uietkathua" class="social-links__item"><i
-                  class="fa-brands fa-twitter"></i></a>
+                  class="fa-brands fa-x-twitter"></i></a>
               <a class="social-links__item" href="https://github.com/UIETJU" target="_blank"><i
-                  class="fa-brands fa-github"></i></a>
+                  class="fa-brands fa-github" style="color: black;"></i></a>
             </div>
           </div>
         </div>
