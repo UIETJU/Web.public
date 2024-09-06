@@ -1,36 +1,42 @@
-# UIET Website Repo
+# UIET Website Public Repository for Experimentation
 
-This is the official repository of the UIET website. This is the official GitHub account of UIET JU.
-## Google Form CMS
-- This website contains a unique php based cms for dynamic rendering of content using google forms. Please beware of the php code snippets implementing the cms.
-- Refer the existing components implemented using this system (gallery, home screen, Notification system etc.) to understand the working and development of new components along the same line
+This repository is a public version of the official UIET JU website repository, designed for collaboration, experimentation, and innovation. It mirrors the main project, allowing contributors to suggest improvements, test features, and help enhance the website without affecting the live version. Contributions are welcome, and suitable changes will be considered for integration into the official project with proper attribution.
+
+## Google Form CMS Overview
+
+- This website leverages a custom PHP-based CMS that dynamically renders content using Google Forms.
+- Key components of the system (gallery, home screen, notification system, etc.) utilize this integration for easy and dynamic content management.
   
-### Objectives of this system
+### System Objectives
 
 - **Simplify Content Management**:
-  - Create an intuitive system that allows non-technical users to easily update website content using Google Forms.
+  - A user-friendly system that allows non-technical users to update content via Google Forms.
 
 - **Automate Data Processing**:
-  - Utilize Google Apps Script to automate data validation and transfer from Google Sheets to the MySQL database, minimizing manual intervention.
+  - Google Apps Script automates data flow between Google Sheets and MySQL, minimizing manual work.
 
-- **Ensure Real-Time Updates**:
-  - Implement PHP scripts to dynamically fetch and display updated content on the website, ensuring the information is current and accurate.
+- **Enable Real-Time Updates**:
+  - PHP scripts dynamically fetch and display content, ensuring information remains up-to-date.
 
-- **Enhance Usability and Accessibility**:
-  - Design a user-friendly interface that all stakeholders, regardless of technical skills, can use to update website components like the gallery, notifications, and profiles.
+- **Encourage Collaboration**:
+  - Multiple users can contribute updates using Google Sheets, facilitating collaborative content management.
 
-- **Improve Website Reliability**:
-  - Develop a robust system that reduces the risk of website crashes and ensures continuous availability of up-to-date content.
+- **Cost-Effective & Scalable**:
+  - Built with free Google tools, this system is cost-effective and designed to grow with future needs.
 
-- **Facilitate Collaborative Content Management**:
-  - Enable multiple users to contribute to and manage website updates simultaneously through Google Sheets’ collaborative features.
+### Contributions & Guidelines
 
-- **Cost-Effective Solution**:
-  - Leverage free Google tools to provide a cost-effective content management solution without the need for expensive CMS licenses or dedicated IT maintenance.
+- **Error Reporting**:
+  - Found a glitch or error? Feel free to open an issue for review and resolution.
 
-- **Scalability for Future Needs**:
-  - Design the system to be easily expandable to accommodate future additions and new features, ensuring long-term usability and flexibility.
+- **Innovations & Suggestions**:
+  - Experiment with new features, designs, and components. Suitable innovations will be pushed to the main repository with attribution.
 
-## Warning
+### Important Notes
 
-- Do not include database connection file in public files and directories. Keep it outside of public_html directory and use require statements to include it inside your normal PHP file.
+- **Security**:
+  - Do not include sensitive files like the database connection file in public directories. Use `require` statements to reference such files securely.
+
+### Let's Collaborate!
+
+This repository serves as an experimental playground for improvements to the UIET website. We encourage collaboration, feedback, and creativity to help improve the website.
