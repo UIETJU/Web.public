@@ -1,4 +1,4 @@
-# UIET Website Public Repository for Experimentation
+# Repository for Experimentation
 
 This repository is a public version of the official UIET JU website repository, designed for collaboration, experimentation, and innovation. It mirrors the main project, allowing contributors to suggest improvements, test features, and help enhance the website without affecting the live version. Contributions are welcome, and suitable changes will be considered for integration into the official project with proper attribution.
 
